@@ -8,6 +8,8 @@
 
 #import "DRVAppDelegate.h"
 
+#import <Mapbox-iOS-SDK/Mapbox.h>
+
 @interface DRVAppDelegate ()
 
 @end
@@ -16,7 +18,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [[RMConfiguration sharedInstance] setAccessToken:@"pk.eyJ1IjoiZXRvbHN0b3kiLCJhIjoiRVZJTmpMbyJ9.y1mZsgE79C8CjVxlACj2UQ"];
+    
     return YES;
 }
 

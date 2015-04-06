@@ -14,6 +14,7 @@
 		9F1C56171AD30CBF0028B654 /* CareDriveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56161AD30CBF0028B654 /* CareDriveTests.m */; };
 		9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */; };
 		9F1C56271AD310370028B654 /* DRVCountryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */; };
+		9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */; };
 		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountryPickerUserStory.storyboard; sourceTree = "<group>"; };
 		9F1C56251AD310370028B654 /* DRVCountryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerViewController.h; sourceTree = "<group>"; };
 		9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerViewController.m; sourceTree = "<group>"; };
+		9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "caredrive-map.mbtiles"; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -100,6 +102,7 @@
 				9F1C55FE1AD30CBF0028B654 /* DRVAppDelegate.h */,
 				9F1C55FF1AD30CBF0028B654 /* DRVAppDelegate.m */,
 				9F1C56221AD30D260028B654 /* Userstories */,
+				9F1C562B1AD311500028B654 /* Resources */,
 				9F1C56071AD30CBF0028B654 /* Images.xcassets */,
 				9F1C56091AD30CBF0028B654 /* LaunchScreen.xib */,
 				9F1C55FA1AD30CBF0028B654 /* Supporting Files */,
@@ -165,6 +168,22 @@
 				9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */,
 			);
 			name = Controllers;
+			sourceTree = "<group>";
+		};
+		9F1C562B1AD311500028B654 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C562C1AD311590028B654 /* Map */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9F1C562C1AD311590028B654 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
@@ -261,6 +280,7 @@
 				9F1C560B1AD30CBF0028B654 /* LaunchScreen.xib in Resources */,
 				9F1C56081AD30CBF0028B654 /* Images.xcassets in Resources */,
 				9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */,
+				9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

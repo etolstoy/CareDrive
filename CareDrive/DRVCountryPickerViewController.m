@@ -9,10 +9,14 @@
 #import "DRVCountryPickerViewController.h"
 
 #import <MapKit/MapKit.h>
+#import <Mapbox-iOS-SDK/Mapbox.h>
+
+static NSString *const DRVTilesFileName = @"caredrive-map";
+static NSString *const DRVTilesFileType = @"mbtiles";
 
 @interface DRVCountryPickerViewController ()
 
-@property (weak, nonatomic) IBOutlet MKMapView *countryMapView;
+@property (weak, nonatomic) IBOutlet RMMapView *countryMapView;
 @property (weak, nonatomic) IBOutlet UITableView *countryTableView;
 
 @end
@@ -21,7 +25,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    RMMBTilesSource *tilesSource = [[RMMBTilesSource alloc] initWithTileSetResource:DRVTilesFileName ofType:DRVTilesFileType];
+    [self.countryMapView setTileSource:tilesSource];
 }
 
 @end
