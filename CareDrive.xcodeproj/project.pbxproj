@@ -13,6 +13,7 @@
 		9F1C560B1AD30CBF0028B654 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56091AD30CBF0028B654 /* LaunchScreen.xib */; };
 		9F1C56171AD30CBF0028B654 /* CareDriveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56161AD30CBF0028B654 /* CareDriveTests.m */; };
 		9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */; };
+		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65754A06480B207EB6A12BEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1C55F71AD30CBF0028B654 /* CareDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1C55FB1AD30CBF0028B654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1C55FC1AD30CBF0028B654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -37,6 +39,8 @@
 		9F1C56151AD30CBF0028B654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1C56161AD30CBF0028B654 /* CareDriveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CareDriveTests.m; sourceTree = "<group>"; };
 		9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountryPickerUserStory.storyboard; sourceTree = "<group>"; };
+		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,12 +62,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190C0367687EB8C598CC4764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */,
+				DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F1C55EE1AD30CBF0028B654 = {
 			isa = PBXGroup;
 			children = (
 				9F1C55F91AD30CBF0028B654 /* CareDrive */,
 				9F1C56131AD30CBF0028B654 /* CareDriveTests */,
 				9F1C55F81AD30CBF0028B654 /* Products */,
+				190C0367687EB8C598CC4764 /* Pods */,
+				EB04F4624F86DC6DBCBECCEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +154,14 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
+		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65754A06480B207EB6A12BEA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +169,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F1C561A1AD30CBF0028B654 /* Build configuration list for PBXNativeTarget "CareDrive" */;
 			buildPhases = (
+				C27C314EFF5E945BFB0C2D98 /* Check Pods Manifest.lock */,
 				9F1C55F31AD30CBF0028B654 /* Sources */,
 				9F1C55F41AD30CBF0028B654 /* Frameworks */,
 				9F1C55F51AD30CBF0028B654 /* Resources */,
+				BC50B7D120F5FF0CF32836FF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +259,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BC50B7D120F5FF0CF32836FF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27C314EFF5E945BFB0C2D98 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F1C55F31AD30CBF0028B654 /* Sources */ = {
@@ -352,6 +411,7 @@
 		};
 		9F1C561B1AD30CBF0028B654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CareDrive/Info.plist;
@@ -362,6 +422,7 @@
 		};
 		9F1C561C1AD30CBF0028B654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CareDrive/Info.plist;
@@ -423,6 +484,7 @@
 				9F1C561C1AD30CBF0028B654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F1C561D1AD30CBF0028B654 /* Build configuration list for PBXNativeTarget "CareDriveTests" */ = {
 			isa = XCConfigurationList;
@@ -431,6 +493,7 @@
 				9F1C561F1AD30CBF0028B654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
