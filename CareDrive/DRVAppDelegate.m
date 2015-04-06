@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "DRVAppDelegate.h"
 
-@interface AppDelegate ()
+@interface DRVAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation DRVAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
