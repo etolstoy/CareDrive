@@ -7,6 +7,9 @@ PODS:
   - GRMustache (7.3.0):
     - JRSwizzle (~> 1.0)
   - JRSwizzle (1.0)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core (= 2.2)
+  - MagicalRecord/Core (2.2)
   - Mapbox-iOS-SDK (1.6.0):
     - FMDB (= 2.3)
     - GRMustache (= 7.3.0)
@@ -14,12 +17,14 @@ PODS:
   - SMCalloutView (2.0)
 
 DEPENDENCIES:
+  - MagicalRecord (~> 2.2)
   - Mapbox-iOS-SDK (~> 1.6.0)
 
 SPEC CHECKSUMS:
   FMDB: 773d79bb74226959b7e2286b1d6e0bd857c88915
   GRMustache: 6baee020c5644416c034f5afb1607f6219e7f753
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
   Mapbox-iOS-SDK: ee136ca5b7f853456b50dfd7a7f0e243288cf86f
   SMCalloutView: f758edd824b18bf4f42de00df1e299861a2d1950
 

@@ -36,6 +36,18 @@
 #define COCOAPODS_VERSION_MINOR_JRSwizzle 0
 #define COCOAPODS_VERSION_PATCH_JRSwizzle 0
 
+// MagicalRecord
+#define COCOAPODS_POD_AVAILABLE_MagicalRecord
+#define COCOAPODS_VERSION_MAJOR_MagicalRecord 2
+#define COCOAPODS_VERSION_MINOR_MagicalRecord 2
+#define COCOAPODS_VERSION_PATCH_MagicalRecord 0
+
+// MagicalRecord/Core
+#define COCOAPODS_POD_AVAILABLE_MagicalRecord_Core
+#define COCOAPODS_VERSION_MAJOR_MagicalRecord_Core 2
+#define COCOAPODS_VERSION_MINOR_MagicalRecord_Core 2
+#define COCOAPODS_VERSION_PATCH_MagicalRecord_Core 0
+
 // Mapbox-iOS-SDK
 #define COCOAPODS_POD_AVAILABLE_Mapbox_iOS_SDK
 #define COCOAPODS_VERSION_MAJOR_Mapbox_iOS_SDK 1
