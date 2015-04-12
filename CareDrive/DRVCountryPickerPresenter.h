@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 
 @protocol DRVCountryPickerView;
+@protocol RMMapViewDelegate;
 
 @interface DRVCountryPickerPresenter : NSObject
 
 @property (nonatomic, weak) id <DRVCountryPickerView> view;
 
 - (void)setupMapWithTiles;
+- (id <RMMapViewDelegate>)delegateForMapView;
 
 @end

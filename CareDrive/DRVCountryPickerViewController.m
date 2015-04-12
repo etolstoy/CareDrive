@@ -27,6 +27,8 @@
     self.presenter = [[DRVCountryPickerPresenter alloc] init];
     self.presenter.view = self;
     [self.presenter setupMapWithTiles];
+    
+    self.countryMapView.delegate = [self.presenter delegateForMapView];
 }
 
 #pragma mark - Методы DRVCountryPickerView
