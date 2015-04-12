@@ -11,10 +11,11 @@
 		9F1C56001AD30CBF0028B654 /* DRVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C55FF1AD30CBF0028B654 /* DRVAppDelegate.m */; };
 		9F1C56081AD30CBF0028B654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56071AD30CBF0028B654 /* Images.xcassets */; };
 		9F1C560B1AD30CBF0028B654 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56091AD30CBF0028B654 /* LaunchScreen.xib */; };
-		9F1C56171AD30CBF0028B654 /* CareDriveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56161AD30CBF0028B654 /* CareDriveTests.m */; };
 		9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */; };
 		9F1C56271AD310370028B654 /* DRVCountryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */; };
 		9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */; };
+		9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */; };
+		9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
 		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -39,11 +40,16 @@
 		9F1C560A1AD30CBF0028B654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9F1C56101AD30CBF0028B654 /* CareDriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareDriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1C56151AD30CBF0028B654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F1C56161AD30CBF0028B654 /* CareDriveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CareDriveTests.m; sourceTree = "<group>"; };
 		9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountryPickerUserStory.storyboard; sourceTree = "<group>"; };
 		9F1C56251AD310370028B654 /* DRVCountryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerViewController.h; sourceTree = "<group>"; };
 		9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerViewController.m; sourceTree = "<group>"; };
 		9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "caredrive-map.mbtiles"; sourceTree = "<group>"; };
+		9F1C562D1ADA7D290028B654 /* DRVCountryPickerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerPresenter.h; sourceTree = "<group>"; };
+		9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenter.m; sourceTree = "<group>"; };
+		9F1C56311ADA7D440028B654 /* DRVCountryPickerInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractor.h; sourceTree = "<group>"; };
+		9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractor.m; sourceTree = "<group>"; };
+		9F1C56351ADA7D920028B654 /* DRVCountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerView.h; sourceTree = "<group>"; };
+		9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractorIO.h; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,7 +128,6 @@
 		9F1C56131AD30CBF0028B654 /* CareDriveTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F1C56161AD30CBF0028B654 /* CareDriveTests.m */,
 				9F1C56141AD30CBF0028B654 /* Supporting Files */,
 			);
 			path = CareDriveTests;
@@ -149,6 +154,8 @@
 			children = (
 				9F1C56241AD30D3B0028B654 /* Storyboard */,
 				9F1C56281AD3103B0028B654 /* Controllers */,
+				9F1C56301ADA7D2B0028B654 /* Presenters */,
+				9F1C56341ADA7D480028B654 /* Interactors */,
 			);
 			name = CountryPickerUserStory;
 			sourceTree = "<group>";
@@ -166,6 +173,7 @@
 			children = (
 				9F1C56251AD310370028B654 /* DRVCountryPickerViewController.h */,
 				9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */,
+				9F1C56351ADA7D920028B654 /* DRVCountryPickerView.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -184,6 +192,25 @@
 				9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */,
 			);
 			name = Map;
+			sourceTree = "<group>";
+		};
+		9F1C56301ADA7D2B0028B654 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C562D1ADA7D290028B654 /* DRVCountryPickerPresenter.h */,
+				9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		9F1C56341ADA7D480028B654 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56311ADA7D440028B654 /* DRVCountryPickerInteractor.h */,
+				9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */,
+				9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */,
+			);
+			name = Interactors;
 			sourceTree = "<group>";
 		};
 		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
@@ -331,6 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */,
+				9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */,
 				9F1C56001AD30CBF0028B654 /* DRVAppDelegate.m in Sources */,
 				9F1C56271AD310370028B654 /* DRVCountryPickerViewController.m in Sources */,
 				9F1C55FD1AD30CBF0028B654 /* main.m in Sources */,
@@ -341,7 +370,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1C56171AD30CBF0028B654 /* CareDriveTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

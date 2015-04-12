@@ -7,12 +7,10 @@
 //
 
 #import "DRVCountryPickerViewController.h"
+#import "DRVCountryPickerPresenter.h"
 
 #import <MapKit/MapKit.h>
 #import <Mapbox-iOS-SDK/Mapbox.h>
-
-static NSString *const DRVTilesFileName = @"caredrive-map";
-static NSString *const DRVTilesFileType = @"mbtiles";
 
 @interface DRVCountryPickerViewController ()
 
@@ -26,7 +24,15 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    RMMBTilesSource *tilesSource = [[RMMBTilesSource alloc] initWithTileSetResource:DRVTilesFileName ofType:DRVTilesFileType];
+    self.presenter = [[DRVCountryPickerPresenter alloc] init];
+    self.presenter.view = self;
+    [self.presenter setupMapWithTiles];
+}
+
+#pragma mark - Методы DRVCountryPickerView
+
+- (void)setMapTilesWithName:(NSString *)mapTilesName format:(NSString *)mapTilesFormat {
+    RMMBTilesSource *tilesSource = [[RMMBTilesSource alloc] initWithTileSetResource:mapTilesName ofType:mapTilesFormat];
     [self.countryMapView setTileSource:tilesSource];
 }
 
