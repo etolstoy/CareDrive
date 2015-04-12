@@ -41,7 +41,7 @@ XCTFail(@"'%@' doesn't equal '%@'", loc1, loc2); \
     [super tearDown];
 }
 
-- (void)testThatServiceReturnsGeoDataForCountryCode {
+- (void)testThatServiceReturnsPolygonGeoDataForCountryCode {
     // given
     NSString *const kCountryCode = @"HTI";
     CLLocation *const kExpectedFirstLocation = [[CLLocation alloc] initWithLatitude:19.91568391 longitude:-73.18979062];
@@ -60,5 +60,20 @@ XCTFail(@"'%@' doesn't equal '%@'", loc1, loc2); \
     XCTAssertEqual(geoData.polygons.count, kExpectedPolygonsCount);
 }
 
+- (void)testThatServiceReturnsMultiPolygonGeoDataForCountryCode {
+    // given
+    NSString *const kCountryCode = @"NZL";
+    NSInteger const kExpectedPolygonsCount = 2;
+    NSInteger const kExpectedFirstPolygonCount = 30;
+    NSInteger const kExpectedSecondPolygonCount = 36;
+    
+    // when
+    DRVCountryGeoData *geoData = [self.countryGeoService geoDataForCountryWithCountryCode:kCountryCode];
+    
+    // then
+    XCTAssertEqual(geoData.polygons.count, kExpectedPolygonsCount);
+    XCTAssertEqual([[geoData.polygons firstObject] count], kExpectedFirstPolygonCount);
+    XCTAssertEqual([[geoData.polygons lastObject] count], kExpectedSecondPolygonCount);
+}
 
 @end
