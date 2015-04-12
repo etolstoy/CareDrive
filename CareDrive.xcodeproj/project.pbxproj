@@ -16,7 +16,10 @@
 		9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */; };
 		9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */; };
 		9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
+		9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */; };
+		9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */; };
 		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
+		EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB66F014828E08D6517A8E0F /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		65754A06480B207EB6A12BEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		9F1C55F71AD30CBF0028B654 /* CareDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1C55FB1AD30CBF0028B654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1C55FC1AD30CBF0028B654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,8 +54,11 @@
 		9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractor.m; sourceTree = "<group>"; };
 		9F1C56351ADA7D920028B654 /* DRVCountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerView.h; sourceTree = "<group>"; };
 		9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractorIO.h; sourceTree = "<group>"; };
+		9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenterTests.m; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB66F014828E08D6517A8E0F /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,8 @@
 			children = (
 				D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */,
 				DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */,
+				D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */,
+				65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -129,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				9F1C56141AD30CBF0028B654 /* Supporting Files */,
+				9F1C56391ADA7FEC0028B654 /* Userstories */,
 			);
 			path = CareDriveTests;
 			sourceTree = "<group>";
@@ -213,10 +224,35 @@
 			name = Interactors;
 			sourceTree = "<group>";
 		};
+		9F1C56391ADA7FEC0028B654 /* Userstories */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C563A1ADA7FF50028B654 /* CountryPickerUserStory */,
+			);
+			name = Userstories;
+			sourceTree = "<group>";
+		};
+		9F1C563A1ADA7FF50028B654 /* CountryPickerUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C563B1ADA80000028B654 /* Presenters */,
+			);
+			name = CountryPickerUserStory;
+			sourceTree = "<group>";
+		};
+		9F1C563B1ADA80000028B654 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
 		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				65754A06480B207EB6A12BEA /* libPods.a */,
+				FB66F014828E08D6517A8E0F /* libPods-test.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -247,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F1C561D1AD30CBF0028B654 /* Build configuration list for PBXNativeTarget "CareDriveTests" */;
 			buildPhases = (
+				795C6BF1E5FCFA7AD01CD3D8 /* Check Pods Manifest.lock */,
 				9F1C560C1AD30CBF0028B654 /* Sources */,
 				9F1C560D1AD30CBF0028B654 /* Frameworks */,
 				9F1C560E1AD30CBF0028B654 /* Resources */,
+				7AC98D36DC3D8F4EB282C87D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -321,6 +359,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		795C6BF1E5FCFA7AD01CD3D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC98D36DC3D8F4EB282C87D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		BC50B7D120F5FF0CF32836FF /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,6 +438,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */,
+				9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +565,7 @@
 		};
 		9F1C561E1AD30CBF0028B654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -514,6 +585,7 @@
 		};
 		9F1C561F1AD30CBF0028B654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (

@@ -1,0 +1,1 @@
+PODS_APP_FMDB_OTHER_LDFLAGS = -l"sqlite3"
