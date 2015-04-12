@@ -10,10 +10,12 @@
 
 @protocol DRVCountryPickerView;
 @protocol RMMapViewDelegate;
+@protocol DRVCountryPickerInteractorInput;
 
 @interface DRVCountryPickerPresenter : NSObject
 
-@property (nonatomic, weak) id <DRVCountryPickerView> view;
+@property (nonatomic, strong) id <DRVCountryPickerView> view;
+@property (nonatomic, strong) id <DRVCountryPickerInteractorInput> interactor;
 
 - (void)setupMapWithTiles;
 - (id <RMMapViewDelegate>)delegateForMapView;

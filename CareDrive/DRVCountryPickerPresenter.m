@@ -8,6 +8,8 @@
 
 #import "DRVCountryPickerPresenter.h"
 #import "DRVCountryPickerView.h"
+#import "DRVCountryPickerInteractorIO.h"
+#import "DRVCountryPickerInteractor.h"
 
 #import <UIKit/UIKit.h>
 #import <Mapbox-iOS-SDK/Mapbox.h>
@@ -21,6 +23,13 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 
 @implementation DRVCountryPickerPresenter
 
+- (instancetype)init {
+    if (self = [super init]) {
+        self.interactor = [[DRVCountryPickerInteractor alloc] init];
+    }
+    return self;
+}
+
 - (void)setupMapWithTiles {
     [self.view setMapTilesWithName:DRVTilesFileName format:DRVTilesFileType];
 }
@@ -32,11 +41,21 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 #pragma mark - Методы RMMapViewDelegate
 
 - (void)singleTapOnMap:(RMMapView *)map at:(CGPoint)point {
+    [map removeAllAnnotations];
+    RMMapboxSource *source = map.tileSource;
+    NSString *formattedOutput = [source formattedOutputOfType:RMInteractiveSourceOutputTypeTeaser forPoint:point inMapView:map];
+    NSString *countryCode = [self.interactor countryCodeFromMapFormattedOutput:formattedOutput];
     
+    NSArray *polygonsArray = [self.interactor polygonsArrayForCountryCode:countryCode];
+    for (NSArray *polygon in polygonsArray) {
+        RMPolygonAnnotation *annotation = [[RMPolygonAnnotation alloc] initWithMapView:map points:polygon interiorPolygons:nil];
+        [annotation setBoundingBoxFromLocations:polygon];
+        [map addAnnotation:annotation];
+    }
 }
 
 - (RMMapLayer *)mapView:(RMMapView *)mapView layerForAnnotation:(RMAnnotation *)annotation {
-    return nil;
+    return annotation.layer;
 }
 
 @end

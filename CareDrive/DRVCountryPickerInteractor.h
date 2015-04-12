@@ -7,7 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "DRVCountryPickerInteractorIO.h"
 
-@interface DRVCountryPickerInteractor : NSObject
+@interface DRVCountryPickerInteractor : NSObject <DRVCountryPickerInteractorInput>
+
+@property (strong, nonatomic) id <DRVCountryPickerInteractorOutput> presenter;
 
 @end

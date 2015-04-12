@@ -10,6 +10,9 @@
 
 @protocol DRVCountryPickerInteractorInput <NSObject>
 
+- (NSString *)countryCodeFromMapFormattedOutput:(NSString *)formattedOutput;
+- (NSArray *)polygonsArrayForCountryCode:(NSString *)countryCode;
+
 @end
 
 @protocol DRVCountryPickerInteractorOutput <NSObject>

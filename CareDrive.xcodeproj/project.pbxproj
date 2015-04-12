@@ -18,6 +18,7 @@
 		9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
 		9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */; };
 		9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */; };
+		9F48361D1ADA8D7A001E5564 /* world-110m.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9F48361C1ADA8D7A001E5564 /* world-110m.geojson */; };
 		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
 		EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB66F014828E08D6517A8E0F /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -55,6 +56,7 @@
 		9F1C56351ADA7D920028B654 /* DRVCountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerView.h; sourceTree = "<group>"; };
 		9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractorIO.h; sourceTree = "<group>"; };
 		9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenterTests.m; sourceTree = "<group>"; };
+		9F48361C1ADA8D7A001E5564 /* world-110m.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "world-110m.geojson"; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		9F1C562C1AD311590028B654 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				9F48361C1ADA8D7A001E5564 /* world-110m.geojson */,
 				9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */,
 			);
 			name = Map;
@@ -346,6 +349,7 @@
 				9F1C56081AD30CBF0028B654 /* Images.xcassets in Resources */,
 				9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */,
 				9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */,
+				9F48361D1ADA8D7A001E5564 /* world-110m.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
