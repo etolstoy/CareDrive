@@ -47,16 +47,17 @@ XCTFail(@"'%@' doesn't equal '%@'", loc1, loc2); \
     CLLocation *const kExpectedFirstLocation = [[CLLocation alloc] initWithLatitude:19.91568391 longitude:-73.18979062];
     CLLocation *const kExpectedLastLocation = [[CLLocation alloc] initWithLatitude:19.91568391 longitude:-73.18979062];
     NSInteger const kExpectedLocationsArrayCount = 21;
+    NSInteger const kExpectedPolygonsCount = 1;
     
     // when
     DRVCountryGeoData *geoData = [self.countryGeoService geoDataForCountryWithCountryCode:kCountryCode];
     NSArray *polygon = [geoData.polygons firstObject];
-    CGFloat loc = [[polygon firstObject] distanceFromLocation:kExpectedFirstLocation];
+
     // then
     XCTAssertEqualLocations([polygon firstObject], kExpectedFirstLocation);
     XCTAssertEqualLocations([polygon lastObject], kExpectedLastLocation);
     XCTAssertEqual(polygon.count, kExpectedLocationsArrayCount);
-    
+    XCTAssertEqual(geoData.polygons.count, kExpectedPolygonsCount);
 }
 
 
