@@ -9,8 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "DRVCountryPickerInteractorIO.h"
 
+@class DRVCountryPickerDataManager;
+
 @interface DRVCountryPickerInteractor : NSObject <DRVCountryPickerInteractorInput>
 
 @property (strong, nonatomic) id <DRVCountryPickerInteractorOutput> presenter;
+@property (strong, nonatomic) DRVCountryPickerDataManager *dataManager;
 
 @end
