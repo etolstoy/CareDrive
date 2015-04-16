@@ -14,4 +14,6 @@
 
 @property (strong, nonatomic) id <DRVCountryGeoService> countryGeoService;
 
+- (NSArray *)obtainPolygonsArrayForCountryCode:(NSString *)countryCode;
+
 @end

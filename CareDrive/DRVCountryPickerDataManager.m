@@ -7,7 +7,14 @@
 //
 
 #import "DRVCountryPickerDataManager.h"
+#import "DRVCountryGeoService.h"
+#import "DRVCountryGeoData.h"
 
 @implementation DRVCountryPickerDataManager
+
+- (NSArray *)obtainPolygonsArrayForCountryCode:(NSString *)countryCode {
+    DRVCountryGeoData *geoData = [self.countryGeoService geoDataForCountryWithCountryCode:countryCode];
+    return geoData.polygons;
+}
 
 @end

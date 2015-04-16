@@ -17,26 +17,28 @@
 
 - (UIViewController *)countryPickerViewController {
     return [TyphoonDefinition withClass:[DRVCountryPickerViewController class] configuration:^(TyphoonDefinition *definition) {
+        
         [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
     }];
 }
 
 - (DRVCountryPickerPresenter *)countryPickerPresenter {
     return [TyphoonDefinition withClass:[DRVCountryPickerPresenter class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(view) with:[self countryPickerViewController]];
         [definition injectProperty:@selector(interactor) with:[self countryPickerInteractor]];
+        [definition injectProperty:@selector(view) with:[self countryPickerViewController]];
     }];
 }
 
 - (DRVCountryPickerInteractor *)countryPickerInteractor {
     return [TyphoonDefinition withClass:[DRVCountryPickerInteractor class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
         [definition injectProperty:@selector(dataManager) with:[self countryPickerDataManager]];
+        [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
     }];
 }
 
 - (DRVCountryPickerDataManager *)countryPickerDataManager {
     return [TyphoonDefinition withClass:[DRVCountryPickerDataManager class] configuration:^(TyphoonDefinition *definition) {
+        
         [definition injectProperty:@selector(countryGeoService) with:[self countryPickerGeoServiceBase]];
     }];
 }

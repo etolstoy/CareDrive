@@ -51,15 +51,4 @@
     OCMVerifyAll(self.mockView);
 }
 
-- (void)testThatPresenterReturnsDelegateForMapView {
-    // given
-    
-    // when
-    id mapViewDelegate = [self.presenter delegateForMapView];
-    
-    // then
-    XCTAssertNotNil(mapViewDelegate);
-    XCTAssertTrue([mapViewDelegate conformsToProtocol:@protocol(RMMapViewDelegate)]);
-}
-
 @end

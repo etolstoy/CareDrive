@@ -7,10 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol DRVCountryPickerView;
-@protocol RMMapViewDelegate;
 @protocol DRVCountryPickerInteractorInput;
+
+@class RMMapView;
 
 @interface DRVCountryPickerPresenter : NSObject
 
@@ -18,6 +20,6 @@
 @property (nonatomic, strong) id <DRVCountryPickerInteractorInput> interactor;
 
 - (void)setupMapWithTiles;
-- (id <RMMapViewDelegate>)delegateForMapView;
+- (void)processTapOnMap:(RMMapView *)map at:(CGPoint)point;
 
 @end
