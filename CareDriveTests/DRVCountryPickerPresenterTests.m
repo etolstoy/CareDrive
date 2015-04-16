@@ -12,6 +12,7 @@
 
 #import "DRVCountryPickerPresenter.h"
 #import "DRVCountryPickerView.h"
+#import "DRVCountryPickerInteractorIO.h"
 
 @protocol RMMapViewDelegate;
 
@@ -19,6 +20,7 @@
 
 @property (strong, nonatomic) DRVCountryPickerPresenter *presenter;
 @property (strong, nonatomic) id mockView;
+@property (strong, nonatomic) id mockInteractor;
 
 @end
 
@@ -29,13 +31,16 @@
 
     self.presenter = [[DRVCountryPickerPresenter alloc] init];
     self.mockView = OCMProtocolMock(@protocol(DRVCountryPickerView));
+    self.mockInteractor = OCMProtocolMock(@protocol(DRVCountryPickerInteractorInput));
     
     self.presenter.view = self.mockView;
+    self.presenter.interactor = self.mockInteractor;
 }
 
 - (void)tearDown {
     self.presenter = nil;
     self.mockView = nil;
+    self.mockInteractor = nil;
     
     [super tearDown];
 }
@@ -46,6 +51,18 @@
     
     // when
     [self.presenter setupMapWithTiles];
+    
+    // then
+    OCMVerifyAll(self.mockView);
+}
+
+- (void)testThatPresenterProcessesTapOnMap {
+    // given
+    OCMExpect([self.mockInteractor countryCodeFromMapFormattedOutput:[OCMArg any]]);
+    OCMExpect([self.mockInteractor polygonsArrayForCountryCode:[OCMArg any]]);
+    
+    // when
+    [self.presenter processTapOnMap:nil at:CGPointZero];
     
     // then
     OCMVerifyAll(self.mockView);

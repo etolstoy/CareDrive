@@ -27,6 +27,11 @@
 		9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D61371ADA9427000EBC44 /* DRVCountryGeoServiceBase.m */; };
 		9FB40B9A1AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */; };
 		9FB40B9E1AE02AE00007A2B2 /* DRVModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */; };
+		9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */; };
+		9FB40BA31AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BA21AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m */; };
+		9FB40BA51AE03BBC0007A2B2 /* DRVCountryPickerDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */; };
+		9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
+		9FB40BA81AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */; };
 		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
 		EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB66F014828E08D6517A8E0F /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -77,6 +82,8 @@
 		9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerDataManager.m; sourceTree = "<group>"; };
 		9FB40B9C1AE02AE00007A2B2 /* DRVModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVModuleAssembly.h; sourceTree = "<group>"; };
 		9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVModuleAssembly.m; sourceTree = "<group>"; };
+		9FB40BA21AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerDataManagerTests.m; sourceTree = "<group>"; };
+		9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractorTests.m; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -262,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				9F1C563B1ADA80000028B654 /* Presenters */,
+				9FB40BA41AE03B9F0007A2B2 /* DataManagers */,
+				9FB40BA91AE03CD40007A2B2 /* Interactors */,
 			);
 			name = CountryPickerUserStory;
 			sourceTree = "<group>";
@@ -363,6 +372,22 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
+		9FB40BA41AE03B9F0007A2B2 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BA21AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m */,
+			);
+			name = DataManagers;
+			sourceTree = "<group>";
+		};
+		9FB40BA91AE03CD40007A2B2 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
 		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -429,7 +454,6 @@
 					};
 					9F1C560F1AD30CBF0028B654 = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 9F1C55F61AD30CBF0028B654;
 					};
 				};
 			};
@@ -560,10 +584,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
+				9FB40BA31AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m in Sources */,
 				9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */,
+				9FB40BA51AE03BBC0007A2B2 /* DRVCountryPickerDataManager.m in Sources */,
+				9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */,
 				9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */,
 				9F6D61431ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m in Sources */,
 				9F6D61461ADA971C000EBC44 /* DRVCountryGeoData.m in Sources */,
+				9FB40BA81AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m in Sources */,
+				9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +720,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -703,7 +731,6 @@
 				INFOPLIST_FILE = CareDriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareDrive.app/CareDrive";
 			};
 			name = Debug;
 		};
@@ -711,7 +738,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -719,7 +745,6 @@
 				INFOPLIST_FILE = CareDriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareDrive.app/CareDrive";
 			};
 			name = Release;
 		};
