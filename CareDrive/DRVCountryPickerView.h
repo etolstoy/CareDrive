@@ -7,9 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @protocol DRVCountryPickerView <NSObject>
 
 - (void)setMapTilesWithName:(NSString *)mapTilesName format:(NSString *)mapTilesFormat;
+- (void)setTableViewDataSource:(id <UITableViewDataSource>)dataSource;
 
 @end

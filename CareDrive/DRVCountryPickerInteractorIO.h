@@ -12,9 +12,12 @@
 
 - (NSString *)countryCodeFromMapFormattedOutput:(NSString *)formattedOutput;
 - (NSArray *)polygonsArrayForCountryCode:(NSString *)countryCode;
+- (void)fetchCountriesArray;
 
 @end
 
 @protocol DRVCountryPickerInteractorOutput <NSObject>
+
+- (void)didFetchCountriesArray:(NSArray *)array;
 
 @end

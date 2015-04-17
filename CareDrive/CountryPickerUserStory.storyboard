@@ -34,11 +34,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eA-4I-Aav" customClass="RMMapView">
+                                <rect key="frame" x="0.0" y="64" width="320" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="w5Y-5y-MW3"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="304" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Zlm-Sr-EKg">
                                 <rect key="frame" x="0.0" y="264" width="320" height="304"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CI2-yB-WeI">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="CI2-yB-WeI">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CI2-yB-WeI" id="of4-CS-fxV">
@@ -47,16 +54,16 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0eA-4I-Aav" customClass="RMMapView">
-                                <rect key="frame" x="0.0" y="64" width="320" height="200"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Zlm-Sr-EKg" firstAttribute="leading" secondItem="6zg-9u-QhZ" secondAttribute="leading" id="PTD-gH-786"/>
                             <constraint firstItem="joK-1G-CYX" firstAttribute="top" secondItem="Zlm-Sr-EKg" secondAttribute="bottom" id="TU6-l9-fYO"/>
+                            <constraint firstAttribute="trailing" secondItem="0eA-4I-Aav" secondAttribute="trailing" id="f0P-js-oeP"/>
+                            <constraint firstItem="0eA-4I-Aav" firstAttribute="leading" secondItem="6zg-9u-QhZ" secondAttribute="leading" id="l0E-Pd-U3E"/>
                             <constraint firstAttribute="trailing" secondItem="Zlm-Sr-EKg" secondAttribute="trailing" id="ppg-0c-0Ou"/>
+                            <constraint firstItem="0eA-4I-Aav" firstAttribute="top" secondItem="lX7-Zo-Hr0" secondAttribute="bottom" id="xob-bo-sXj"/>
+                            <constraint firstItem="Zlm-Sr-EKg" firstAttribute="top" secondItem="0eA-4I-Aav" secondAttribute="bottom" id="z1O-nM-UBI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="t1E-6i-1k1"/>

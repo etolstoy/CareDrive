@@ -9,11 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @protocol DRVCountryGeoService;
+@protocol DRVCountryService;
+@protocol DRVCountryPickerDataManagerOutput;
 
 @interface DRVCountryPickerDataManager : NSObject
 
 @property (strong, nonatomic) id <DRVCountryGeoService> countryGeoService;
+@property (strong, nonatomic) id <DRVCountryService> countryService;
+@property (strong, nonatomic) id <DRVCountryPickerDataManagerOutput> interactor;
 
 - (NSArray *)obtainPolygonsArrayForCountryCode:(NSString *)countryCode;
+- (void)obtainCountriesArray;
 
 @end

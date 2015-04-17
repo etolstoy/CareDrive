@@ -10,13 +10,16 @@
 #import "DRVCountryPickerView.h"
 #import "DRVCountryPickerInteractorIO.h"
 #import "DRVCountryPickerInteractor.h"
+#import "DRVCountry.h"
 
 #import <Mapbox-iOS-SDK/Mapbox.h>
 
 static NSString *const DRVTilesFileName = @"caredrive-map";
 static NSString *const DRVTilesFileType = @"mbtiles";
 
-@interface DRVCountryPickerPresenter ()
+@interface DRVCountryPickerPresenter () <UITableViewDataSource>
+
+@property (strong, nonatomic) NSArray *countriesArray;
 
 @end
 
@@ -24,6 +27,10 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 
 - (void)setupMapWithTiles {
     [self.view setMapTilesWithName:DRVTilesFileName format:DRVTilesFileType];
+}
+
+- (void)setupCountriesTableView {
+    [self.interactor fetchCountriesArray];
 }
 
 - (void)processTapOnMap:(RMMapView *)map at:(CGPoint)point {
@@ -39,6 +46,22 @@ static NSString *const DRVTilesFileType = @"mbtiles";
         [annotation setBoundingBoxFromLocations:polygon];
         [map addAnnotation:annotation];
     }
+}
+
+- (void)didFetchCountriesArray:(NSArray *)array {
+    self.countriesArray = array;
+    [self.view setTableViewDataSource:self];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.countriesArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    DRVCountry *country = self.countriesArray[indexPath.row];
+    cell.textLabel.text = country.name;
+    return cell;
 }
 
 @end

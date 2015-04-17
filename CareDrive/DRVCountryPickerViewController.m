@@ -27,6 +27,7 @@
     [self.presenter setupMapWithTiles];
     
     self.countryMapView.delegate = self;
+    [self.presenter setupCountriesTableView];
 }
 
 #pragma mark - Методы DRVCountryPickerView
@@ -34,6 +35,11 @@
 - (void)setMapTilesWithName:(NSString *)mapTilesName format:(NSString *)mapTilesFormat {
     RMMBTilesSource *tilesSource = [[RMMBTilesSource alloc] initWithTileSetResource:mapTilesName ofType:mapTilesFormat];
     [self.countryMapView setTileSource:tilesSource];
+}
+
+- (void)setTableViewDataSource:(id <UITableViewDataSource>)dataSource {
+    self.countryTableView.dataSource = dataSource;
+    [self.countryTableView reloadData];
 }
 
 #pragma mark - Методы RMMapViewDelegate

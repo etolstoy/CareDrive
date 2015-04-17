@@ -7,8 +7,10 @@
 //
 
 #import "DRVAppDelegate.h"
+#import "DRVCountry.h"
 
 #import <Mapbox-iOS-SDK/Mapbox.h>
+#import <MagicalRecord/CoreData+MagicalRecord.h>
 
 @interface DRVAppDelegate ()
 
@@ -19,7 +21,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [[RMConfiguration sharedInstance] setAccessToken:@"pk.eyJ1IjoiZXRvbHN0b3kiLCJhIjoiRVZJTmpMbyJ9.y1mZsgE79C8CjVxlACj2UQ"];
-    
+    [MagicalRecord setupAutoMigratingCoreDataStack];
+
     return YES;
 }
 

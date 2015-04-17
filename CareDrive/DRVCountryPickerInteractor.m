@@ -19,4 +19,12 @@
     return [self.dataManager obtainPolygonsArrayForCountryCode:countryCode];
 }
 
+- (void)fetchCountriesArray {
+    [self.dataManager obtainCountriesArray];
+}
+
+- (void)didObtainCountriesArray:(NSArray *)countries {
+    [self.presenter didFetchCountriesArray:countries];
+}
+
 @end
