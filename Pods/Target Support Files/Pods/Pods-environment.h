@@ -54,6 +54,12 @@
 #define COCOAPODS_VERSION_MINOR_Mapbox_iOS_SDK 6
 #define COCOAPODS_VERSION_PATCH_Mapbox_iOS_SDK 0
 
+// PureLayout
+#define COCOAPODS_POD_AVAILABLE_PureLayout
+#define COCOAPODS_VERSION_MAJOR_PureLayout 2
+#define COCOAPODS_VERSION_MINOR_PureLayout 0
+#define COCOAPODS_VERSION_PATCH_PureLayout 5
+
 // SMCalloutView
 #define COCOAPODS_POD_AVAILABLE_SMCalloutView
 #define COCOAPODS_VERSION_MAJOR_SMCalloutView 2

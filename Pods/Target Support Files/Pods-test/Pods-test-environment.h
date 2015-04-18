@@ -60,6 +60,12 @@
 #define COCOAPODS_VERSION_MINOR_OCMock 1
 #define COCOAPODS_VERSION_PATCH_OCMock 2
 
+// PureLayout
+#define COCOAPODS_POD_AVAILABLE_PureLayout
+#define COCOAPODS_VERSION_MAJOR_PureLayout 2
+#define COCOAPODS_VERSION_MINOR_PureLayout 0
+#define COCOAPODS_VERSION_PATCH_PureLayout 5
+
 // SMCalloutView
 #define COCOAPODS_POD_AVAILABLE_SMCalloutView
 #define COCOAPODS_VERSION_MAJOR_SMCalloutView 2

@@ -15,6 +15,7 @@ PODS:
     - GRMustache (= 7.3.0)
     - SMCalloutView (= 2.0)
   - OCMock (3.1.2)
+  - PureLayout (2.0.5)
   - SMCalloutView (2.0)
   - Typhoon (3.0.2):
     - Typhoon/no-arc (= 3.0.2)
@@ -24,6 +25,7 @@ DEPENDENCIES:
   - MagicalRecord (~> 2.2)
   - Mapbox-iOS-SDK (~> 1.6.0)
   - OCMock (~> 3.1)
+  - PureLayout (~> 2.0.5)
   - Typhoon (~> 3.0.2)
 
 SPEC CHECKSUMS:
@@ -33,6 +35,7 @@ SPEC CHECKSUMS:
   MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
   Mapbox-iOS-SDK: ee136ca5b7f853456b50dfd7a7f0e243288cf86f
   OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
+  PureLayout: a0fe75f1cf485801e7e00b723b8a3c32dca558e2
   SMCalloutView: f758edd824b18bf4f42de00df1e299861a2d1950
   Typhoon: 41c79941e0235c0177457a8f272953d922f47d74
 

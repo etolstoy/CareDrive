@@ -11,23 +11,64 @@
 
 #import <MapKit/MapKit.h>
 #import <Mapbox-iOS-SDK/Mapbox.h>
+#import <PureLayout/PureLayout.h>
 
-@interface DRVCountryPickerViewController () <RMMapViewDelegate>
+static CGFloat DRVCountryTableHeaderViewHeight = 250.0f;
 
-@property (weak, nonatomic) IBOutlet RMMapView *countryMapView;
+@interface DRVCountryPickerViewController () <RMMapViewDelegate, UITableViewDelegate>
+
+@property (strong, nonatomic) UIView *countryTableHeaderView;
+@property (strong, nonatomic) RMMapView *countryMapView;
 @property (weak, nonatomic) IBOutlet UITableView *countryTableView;
 
 @end
 
 @implementation DRVCountryPickerViewController
 
+#pragma mark - Жизненный цикл экрана
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    [self setupTableHeaderView];
+    
     [self.presenter setupMapWithTiles];
+    [self.presenter setupCountriesTableView];
     
     self.countryMapView.delegate = self;
-    [self.presenter setupCountriesTableView];
+    self.countryTableView.delegate = self;
+}
+
+#pragma mark - Установка внешнего вида экрана
+
+- (void)setupTableHeaderView {
+    self.countryTableHeaderView = self.countryTableView.tableHeaderView;
+    self.countryTableView.tableHeaderView = nil;
+    self.countryMapView = [[RMMapView alloc] initWithFrame:self.countryTableHeaderView.frame];
+    [self.countryTableHeaderView addSubview:self.countryMapView];
+    
+    self.countryTableView.contentInset = UIEdgeInsetsMake(DRVCountryTableHeaderViewHeight, 0, 0, 0);
+    self.countryTableView.contentOffset = CGPointMake(0, -DRVCountryTableHeaderViewHeight);
+    
+    [self.countryTableView addSubview:self.countryTableHeaderView];
+    [self.countryMapView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
+
+    [self updateHeaderView];
+}
+
+- (void)updateHeaderView {
+    CGRect frame = CGRectMake(0, -DRVCountryTableHeaderViewHeight, self.countryTableView.bounds.size.width, DRVCountryTableHeaderViewHeight);
+    if (self.countryTableView.contentOffset.y < -DRVCountryTableHeaderViewHeight) {
+        frame.origin.y = self.countryTableView.contentOffset.y;
+        frame.size.height = -self.countryTableView.contentOffset.y;
+    }
+    self.countryTableHeaderView.frame = frame;
+}
+
+#pragma mark - Методы UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    [self updateHeaderView];
 }
 
 #pragma mark - Методы DRVCountryPickerView
