@@ -10,7 +10,6 @@
 #import "DRVCountryPickerViewController.h"
 #import "DRVCountryPickerPresenter.h"
 #import "DRVCountryPickerInteractor.h"
-#import "DRVCountryPickerDataManager.h"
 #import "DRVCountryGeoServiceBase.h"
 #import "DRVCountryServiceBase.h"
 
@@ -32,16 +31,9 @@
 
 - (DRVCountryPickerInteractor *)countryPickerInteractor {
     return [TyphoonDefinition withClass:[DRVCountryPickerInteractor class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(dataManager) with:[self countryPickerDataManager]];
-        [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
-    }];
-}
-
-- (DRVCountryPickerDataManager *)countryPickerDataManager {
-    return [TyphoonDefinition withClass:[DRVCountryPickerDataManager class] configuration:^(TyphoonDefinition *definition) {
-        [definition injectProperty:@selector(interactor) with:[self countryPickerInteractor]];
         [definition injectProperty:@selector(countryGeoService) with:[self countryGeoServiceBase]];
         [definition injectProperty:@selector(countryService) with:[self countryServiceBase]];
+        [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
     }];
 }
 

@@ -25,11 +25,8 @@
 		9F6D61431ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D61421ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m */; };
 		9F6D61461ADA971C000EBC44 /* DRVCountryGeoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D613E1ADA94FE000EBC44 /* DRVCountryGeoData.m */; };
 		9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D61371ADA9427000EBC44 /* DRVCountryGeoServiceBase.m */; };
-		9FB40B9A1AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */; };
 		9FB40B9E1AE02AE00007A2B2 /* DRVModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */; };
 		9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */; };
-		9FB40BA31AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BA21AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m */; };
-		9FB40BA51AE03BBC0007A2B2 /* DRVCountryPickerDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */; };
 		9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
 		9FB40BA81AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */; };
 		9FB40BAC1AE190F80007A2B2 /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */; };
@@ -86,11 +83,8 @@
 		9F6D613D1ADA94FE000EBC44 /* DRVCountryGeoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryGeoData.h; sourceTree = "<group>"; };
 		9F6D613E1ADA94FE000EBC44 /* DRVCountryGeoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryGeoData.m; sourceTree = "<group>"; };
 		9F6D61421ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryGeoServiceBaseTests.m; sourceTree = "<group>"; };
-		9FB40B981AE02AAA0007A2B2 /* DRVCountryPickerDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerDataManager.h; sourceTree = "<group>"; };
-		9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerDataManager.m; sourceTree = "<group>"; };
 		9FB40B9C1AE02AE00007A2B2 /* DRVModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVModuleAssembly.h; sourceTree = "<group>"; };
 		9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVModuleAssembly.m; sourceTree = "<group>"; };
-		9FB40BA21AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerDataManagerTests.m; sourceTree = "<group>"; };
 		9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractorTests.m; sourceTree = "<group>"; };
 		9FB40BAB1AE190F80007A2B2 /* Countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countries.xcdatamodel; sourceTree = "<group>"; };
 		9FB40BAD1AE199600007A2B2 /* DRVPenalty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPenalty.h; sourceTree = "<group>"; };
@@ -106,7 +100,6 @@
 		9FB40BBC1AE199620007A2B2 /* DRVPlatesInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPlatesInfo.h; sourceTree = "<group>"; };
 		9FB40BBD1AE199620007A2B2 /* DRVPlatesInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPlatesInfo.m; sourceTree = "<group>"; };
 		9FB40BC61AE1A38D0007A2B2 /* DRVCountryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryService.h; sourceTree = "<group>"; };
-		9FB40BC81AE1AC310007A2B2 /* DRVCountryPickerDataManagerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerDataManagerOutput.h; sourceTree = "<group>"; };
 		9FB40BC91AE1AE820007A2B2 /* DRVCountryServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryServiceBase.h; sourceTree = "<group>"; };
 		9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryServiceBase.m; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -223,7 +216,6 @@
 				9F1C56281AD3103B0028B654 /* Controllers */,
 				9F1C56301ADA7D2B0028B654 /* Presenters */,
 				9F1C56341ADA7D480028B654 /* Interactors */,
-				9FB40B9B1AE02AAE0007A2B2 /* DataManagers */,
 			);
 			name = CountryPickerUserStory;
 			sourceTree = "<group>";
@@ -294,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				9F1C563B1ADA80000028B654 /* Presenters */,
-				9FB40BA41AE03B9F0007A2B2 /* DataManagers */,
 				9FB40BA91AE03CD40007A2B2 /* Interactors */,
 			);
 			name = CountryPickerUserStory;
@@ -378,16 +369,6 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
-		9FB40B9B1AE02AAE0007A2B2 /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				9FB40B981AE02AAA0007A2B2 /* DRVCountryPickerDataManager.h */,
-				9FB40B991AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m */,
-				9FB40BC81AE1AC310007A2B2 /* DRVCountryPickerDataManagerOutput.h */,
-			);
-			name = DataManagers;
-			sourceTree = "<group>";
-		};
 		9FB40B9F1AE02BA80007A2B2 /* Assemblies */ = {
 			isa = PBXGroup;
 			children = (
@@ -404,14 +385,6 @@
 				9F1C55FF1AD30CBF0028B654 /* DRVAppDelegate.m */,
 			);
 			name = AppDelegate;
-			sourceTree = "<group>";
-		};
-		9FB40BA41AE03B9F0007A2B2 /* DataManagers */ = {
-			isa = PBXGroup;
-			children = (
-				9FB40BA21AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m */,
-			);
-			name = DataManagers;
 			sourceTree = "<group>";
 		};
 		9FB40BA91AE03CD40007A2B2 /* Interactors */ = {
@@ -676,7 +649,6 @@
 				9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */,
 				9F6D61381ADA9427000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
 				9FB40BBE1AE199620007A2B2 /* DRVPlatesInfo.m in Sources */,
-				9FB40B9A1AE02AAA0007A2B2 /* DRVCountryPickerDataManager.m in Sources */,
 				9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */,
 				9FB40BCB1AE1AE820007A2B2 /* DRVCountryServiceBase.m in Sources */,
 				9FB40BB21AE199610007A2B2 /* DRVRoadSign.m in Sources */,
@@ -698,9 +670,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
-				9FB40BA31AE03B970007A2B2 /* DRVCountryPickerDataManagerTests.m in Sources */,
 				9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */,
-				9FB40BA51AE03BBC0007A2B2 /* DRVCountryPickerDataManager.m in Sources */,
 				9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */,
 				9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */,
 				9F6D61431ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m in Sources */,

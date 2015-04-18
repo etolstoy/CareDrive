@@ -7,7 +7,9 @@
 //
 
 #import "DRVCountryPickerInteractor.h"
-#import "DRVCountryPickerDataManager.h"
+#import "DRVCountryGeoService.h"
+#import "DRVCountryService.h"
+#import "DRVCountryGeoData.h"
 
 @implementation DRVCountryPickerInteractor
 
@@ -16,15 +18,14 @@
 }
 
 - (NSArray *)polygonsArrayForCountryCode:(NSString *)countryCode {
-    return [self.dataManager obtainPolygonsArrayForCountryCode:countryCode];
+    DRVCountryGeoData *geoData = [self.countryGeoService geoDataForCountryWithCountryCode:countryCode];
+    return geoData.polygons;
 }
 
 - (void)fetchCountriesArray {
-    [self.dataManager obtainCountriesArray];
-}
-
-- (void)didObtainCountriesArray:(NSArray *)countries {
-    [self.presenter didFetchCountriesArray:countries];
+    [self.countryService obtainCountriesListWithCompletionBlock:^(NSArray *countries, NSError *error) {
+        [self.presenter didFetchCountriesArray:countries];
+    }];
 }
 
 @end

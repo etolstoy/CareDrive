@@ -8,13 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "DRVCountryPickerInteractorIO.h"
-#import "DRVCountryPickerDataManagerOutput.h"
 
 @class DRVCountryPickerDataManager;
 
-@interface DRVCountryPickerInteractor : NSObject <DRVCountryPickerInteractorInput, DRVCountryPickerDataManagerOutput>
+@protocol DRVCountryGeoService;
+@protocol DRVCountryService;
+
+@interface DRVCountryPickerInteractor : NSObject <DRVCountryPickerInteractorInput>
 
 @property (strong, nonatomic) id <DRVCountryPickerInteractorOutput> presenter;
-@property (strong, nonatomic) DRVCountryPickerDataManager *dataManager;
+@property (strong, nonatomic) id <DRVCountryGeoService> countryGeoService;
+@property (strong, nonatomic) id <DRVCountryService> countryService;
 
 @end

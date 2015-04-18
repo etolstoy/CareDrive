@@ -11,12 +11,12 @@
 #import <OCMock/OCMock.h>
 
 #import "DRVCountryPickerInteractor.h"
-#import "DRVCountryPickerDataManager.h"
+#import "DRVCountryGeoService.h"
 
 @interface DRVCountryPickerInteractorTests : XCTestCase
 
 @property (strong, nonatomic) DRVCountryPickerInteractor *interactor;
-@property (strong, nonatomic) id mockDataManager;
+@property (strong, nonatomic) id mockCountryGeoService;
 
 @end
 
@@ -26,13 +26,13 @@
     [super setUp];
     
     self.interactor = [[DRVCountryPickerInteractor alloc] init];
-    self.mockDataManager = OCMClassMock([DRVCountryPickerDataManager class]);
-    self.interactor.dataManager = self.mockDataManager;
+    self.mockCountryGeoService = OCMProtocolMock(@protocol(DRVCountryGeoService));
+    self.interactor.countryGeoService = self.mockCountryGeoService;
 }
 
 - (void)tearDown {
     self.interactor = nil;
-    self.mockDataManager = nil;
+    self.mockCountryGeoService = nil;
     
     [super tearDown];
 }
@@ -52,13 +52,13 @@
 - (void)testThatInteractorReturnsPolygonsArrayForCountryCode {
     // given
     NSString *const kCountryCode = @"RUS";
-    OCMExpect([self.mockDataManager obtainPolygonsArrayForCountryCode:kCountryCode]);
+    OCMExpect([self.mockCountryGeoService geoDataForCountryWithCountryCode:kCountryCode]);
     
     // when
-    NSArray *polygons = [self.interactor polygonsArrayForCountryCode:kCountryCode];
+    [self.interactor polygonsArrayForCountryCode:kCountryCode];
     
     // then
-    OCMVerifyAll(self.mockDataManager);
+    OCMVerifyAll(self.mockCountryGeoService);
 }
 
 @end
