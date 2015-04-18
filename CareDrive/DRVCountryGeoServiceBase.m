@@ -37,6 +37,12 @@ static NSString *const geojsonType = @"geojson";
     NSMutableArray *polygonsArray = [@[] mutableCopy];
     
     NSDictionary *polygonTypeSelectorsDictionary = [self polygonTypeSelectorsDictionary];
+    
+    BOOL validPolygonType = (polygonType && [[polygonTypeSelectorsDictionary allKeys] containsObject:polygonType]);
+    if (!validPolygonType) {
+        return nil;
+    }
+    
     SEL processingSelector = NSSelectorFromString(polygonTypeSelectorsDictionary[polygonType]);
     polygonsArray = [self performSelector:processingSelector withObject:geometry];
     
