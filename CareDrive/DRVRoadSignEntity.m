@@ -1,18 +1,19 @@
 //
-//  DRVPenalty.m
+//  DRVRoadSign.m
 //  CareDrive
 //
 //  Created by Egor Tolstoy on 17.04.15.
 //  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "DRVPenalty.h"
+#import "DRVRoadSignEntity.h"
 
-@implementation DRVPenalty
+@implementation DRVRoadSignEntity
 
 @dynamic name;
 @dynamic detailText;
-@dynamic price;
+@dynamic category;
+@dynamic image;
 @dynamic country;
 
 @end

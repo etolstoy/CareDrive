@@ -1,5 +1,5 @@
 //
-//  DRVPlatesInfo.h
+//  DRVPenalty.h
 //  CareDrive
 //
 //  Created by Egor Tolstoy on 17.04.15.
@@ -9,12 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class DRVCountry;
+@class NSManagedObject;
 
-@interface DRVPlatesInfo : NSManagedObject
+@interface DRVPenaltyEntity : NSManagedObject
 
+@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * detailText;
-@property (nonatomic, retain) id photos;
-@property (nonatomic, retain) DRVCountry *country;
+@property (nonatomic, retain) NSString * price;
+@property (nonatomic, retain) NSManagedObject *country;
 
 @end

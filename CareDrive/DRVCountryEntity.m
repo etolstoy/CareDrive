@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "DRVCountry.h"
-#import "DRVInfoCategory.h"
-#import "DRVPenalty.h"
-#import "DRVPoliceInfo.h"
-#import "DRVRoadSign.h"
+#import "DRVCountryEntity.h"
+#import "DRVInfoCategoryEntity.h"
+#import "DRVPenaltyEntity.h"
+#import "DRVPoliceInfoEntity.h"
+#import "DRVRoadSignEntity.h"
 
-@implementation DRVCountry
+@implementation DRVCountryEntity
 
 @dynamic name;
 @dynamic isoCode;

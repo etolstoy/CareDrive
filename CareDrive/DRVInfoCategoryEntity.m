@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "DRVInfoCategory.h"
+#import "DRVInfoCategoryEntity.h"
 
-@implementation DRVInfoCategory
+@implementation DRVInfoCategoryEntity
 
 @dynamic name;
 @dynamic text;

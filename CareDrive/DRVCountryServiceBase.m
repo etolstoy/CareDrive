@@ -7,7 +7,7 @@
 //
 
 #import "DRVCountryServiceBase.h"
-#import "DRVCountry.h"
+#import "DRVCountryEntity.h"
 
 #import <MagicalRecord/CoreData+MagicalRecord.h>
 
@@ -15,7 +15,7 @@
 
 - (void)obtainCountriesListWithCompletionBlock:(DRVObtainCountriesListCompletionBlock)block {
     NSManagedObjectContext *defaultContext = [NSManagedObjectContext MR_defaultContext];
-    NSArray *countriesArray = [DRVCountry MR_findAllInContext:defaultContext];
+    NSArray *countriesArray = [DRVCountryEntity MR_findAllInContext:defaultContext];
     
     block(countriesArray, nil);
 }

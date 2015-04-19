@@ -1,5 +1,5 @@
 //
-//  DRVPenalty.h
+//  DRVPoliceInfo.h
 //  CareDrive
 //
 //  Created by Egor Tolstoy on 17.04.15.
@@ -11,11 +11,10 @@
 
 @class NSManagedObject;
 
-@interface DRVPenalty : NSManagedObject
+@interface DRVPoliceInfoEntity : NSManagedObject
 
-@property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * detailText;
-@property (nonatomic, retain) NSString * price;
+@property (nonatomic, retain) id photos;
 @property (nonatomic, retain) NSManagedObject *country;
 
 @end

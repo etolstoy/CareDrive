@@ -10,8 +10,10 @@
 #import "DRVCountryGeoService.h"
 #import "DRVCountryService.h"
 #import "DRVCountryGeoData.h"
-#import "DRVCountry.h"
+#import "DRVCountryEntity.h"
 #import "DRVCountryModel.h"
+
+#import <BlocksKit/BlocksKit.h>
 
 @implementation DRVCountryPickerInteractor
 
@@ -32,12 +34,10 @@
 }
 
 - (NSArray *)mapToModelsCountriesEntities:(NSArray *)countriesEntities {
-    NSMutableArray *results = [@[] mutableCopy];
-    for (DRVCountry *country in countriesEntities) {
-        DRVCountryModel *model = [DRVCountryModel objectWithName:country.name countryCode:country.isoCode flagColors:country.flagColors];
-        [results addObject:model];
-    }
-    return [results copy];
+    return [countriesEntities bk_map:^id(DRVCountryEntity *obj) {
+        DRVCountryModel *model = [DRVCountryModel objectWithName:obj.name countryCode:obj.isoCode flagColors:obj.flagColors];
+        return model;
+    }];
 }
 
 @end

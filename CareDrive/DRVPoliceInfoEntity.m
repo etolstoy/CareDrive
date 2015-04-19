@@ -6,9 +6,9 @@
 //  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "DRVPoliceInfo.h"
+#import "DRVPoliceInfoEntity.h"
 
-@implementation DRVPoliceInfo
+@implementation DRVPoliceInfoEntity
 
 @dynamic detailText;
 @dynamic photos;

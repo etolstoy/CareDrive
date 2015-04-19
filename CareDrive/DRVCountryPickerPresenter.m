@@ -10,7 +10,7 @@
 #import "DRVCountryPickerView.h"
 #import "DRVCountryPickerInteractorIO.h"
 #import "DRVCountryPickerInteractor.h"
-#import "DRVCountry.h"
+#import "DRVCountryModel.h"
 
 #import <Mapbox-iOS-SDK/Mapbox.h>
 
@@ -59,7 +59,7 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    DRVCountry *country = self.countriesArray[indexPath.row];
+    DRVCountryModel *country = self.countriesArray[indexPath.row];
     cell.textLabel.text = country.name;
     return cell;
 }

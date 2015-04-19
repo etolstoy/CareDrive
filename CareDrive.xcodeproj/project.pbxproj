@@ -30,14 +30,15 @@
 		9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
 		9FB40BA81AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */; };
 		9FB40BAC1AE190F80007A2B2 /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */; };
-		9FB40BAF1AE199600007A2B2 /* DRVPenalty.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAE1AE199600007A2B2 /* DRVPenalty.m */; };
-		9FB40BB21AE199610007A2B2 /* DRVRoadSign.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB11AE199610007A2B2 /* DRVRoadSign.m */; };
-		9FB40BB51AE199620007A2B2 /* DRVPoliceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB41AE199620007A2B2 /* DRVPoliceInfo.m */; };
-		9FB40BB81AE199620007A2B2 /* DRVInfoCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB71AE199620007A2B2 /* DRVInfoCategory.m */; };
-		9FB40BBB1AE199620007A2B2 /* DRVCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBA1AE199620007A2B2 /* DRVCountry.m */; };
-		9FB40BBE1AE199620007A2B2 /* DRVPlatesInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBD1AE199620007A2B2 /* DRVPlatesInfo.m */; };
+		9FB40BAF1AE199600007A2B2 /* DRVPenaltyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */; };
+		9FB40BB21AE199610007A2B2 /* DRVRoadSignEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */; };
+		9FB40BB51AE199620007A2B2 /* DRVPoliceInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */; };
+		9FB40BB81AE199620007A2B2 /* DRVInfoCategoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */; };
+		9FB40BBB1AE199620007A2B2 /* DRVCountryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */; };
+		9FB40BBE1AE199620007A2B2 /* DRVPlatesInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */; };
 		9FB40BCB1AE1AE820007A2B2 /* DRVCountryServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */; };
 		9FB40BD31AE3DEFE0007A2B2 /* DRVCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */; };
+		9FB40BD71AE3E3AF0007A2B2 /* DRVCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */; };
 		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
 		EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB66F014828E08D6517A8E0F /* libPods-test.a */; };
 /* End PBXBuildFile section */
@@ -88,18 +89,18 @@
 		9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVModuleAssembly.m; sourceTree = "<group>"; };
 		9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractorTests.m; sourceTree = "<group>"; };
 		9FB40BAB1AE190F80007A2B2 /* Countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countries.xcdatamodel; sourceTree = "<group>"; };
-		9FB40BAD1AE199600007A2B2 /* DRVPenalty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPenalty.h; sourceTree = "<group>"; };
-		9FB40BAE1AE199600007A2B2 /* DRVPenalty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPenalty.m; sourceTree = "<group>"; };
-		9FB40BB01AE199610007A2B2 /* DRVRoadSign.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRoadSign.h; sourceTree = "<group>"; };
-		9FB40BB11AE199610007A2B2 /* DRVRoadSign.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVRoadSign.m; sourceTree = "<group>"; };
-		9FB40BB31AE199620007A2B2 /* DRVPoliceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPoliceInfo.h; sourceTree = "<group>"; };
-		9FB40BB41AE199620007A2B2 /* DRVPoliceInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPoliceInfo.m; sourceTree = "<group>"; };
-		9FB40BB61AE199620007A2B2 /* DRVInfoCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVInfoCategory.h; sourceTree = "<group>"; };
-		9FB40BB71AE199620007A2B2 /* DRVInfoCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVInfoCategory.m; sourceTree = "<group>"; };
-		9FB40BB91AE199620007A2B2 /* DRVCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountry.h; sourceTree = "<group>"; };
-		9FB40BBA1AE199620007A2B2 /* DRVCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountry.m; sourceTree = "<group>"; };
-		9FB40BBC1AE199620007A2B2 /* DRVPlatesInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPlatesInfo.h; sourceTree = "<group>"; };
-		9FB40BBD1AE199620007A2B2 /* DRVPlatesInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPlatesInfo.m; sourceTree = "<group>"; };
+		9FB40BAD1AE199600007A2B2 /* DRVPenaltyEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPenaltyEntity.h; sourceTree = "<group>"; };
+		9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPenaltyEntity.m; sourceTree = "<group>"; };
+		9FB40BB01AE199610007A2B2 /* DRVRoadSignEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRoadSignEntity.h; sourceTree = "<group>"; };
+		9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVRoadSignEntity.m; sourceTree = "<group>"; };
+		9FB40BB31AE199620007A2B2 /* DRVPoliceInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPoliceInfoEntity.h; sourceTree = "<group>"; };
+		9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPoliceInfoEntity.m; sourceTree = "<group>"; };
+		9FB40BB61AE199620007A2B2 /* DRVInfoCategoryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVInfoCategoryEntity.h; sourceTree = "<group>"; };
+		9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVInfoCategoryEntity.m; sourceTree = "<group>"; };
+		9FB40BB91AE199620007A2B2 /* DRVCountryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryEntity.h; sourceTree = "<group>"; };
+		9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryEntity.m; sourceTree = "<group>"; };
+		9FB40BBC1AE199620007A2B2 /* DRVPlatesInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPlatesInfoEntity.h; sourceTree = "<group>"; };
+		9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPlatesInfoEntity.m; sourceTree = "<group>"; };
 		9FB40BC61AE1A38D0007A2B2 /* DRVCountryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryService.h; sourceTree = "<group>"; };
 		9FB40BC91AE1AE820007A2B2 /* DRVCountryServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryServiceBase.h; sourceTree = "<group>"; };
 		9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryServiceBase.m; sourceTree = "<group>"; };
@@ -339,12 +340,12 @@
 		9F6D61401ADA9502000EBC44 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BC01AE1997D0007A2B2 /* Country */,
-				9FB40BC11AE199890007A2B2 /* PlatesInfo */,
-				9FB40BC21AE1998F0007A2B2 /* InfoCategory */,
-				9FB40BC31AE199960007A2B2 /* PoliceInfo */,
-				9FB40BC41AE1999C0007A2B2 /* RoadSign */,
-				9FB40BC51AE199A10007A2B2 /* Penalty */,
+				9FB40BC01AE1997D0007A2B2 /* CountryEntity */,
+				9FB40BC11AE199890007A2B2 /* PlatesInfoEntity */,
+				9FB40BC21AE1998F0007A2B2 /* InfoCategoryEntity */,
+				9FB40BC31AE199960007A2B2 /* PoliceInfoEntity */,
+				9FB40BC41AE1999C0007A2B2 /* RoadSignEntity */,
+				9FB40BC51AE199A10007A2B2 /* PenaltyEntity */,
 			);
 			name = Entities;
 			sourceTree = "<group>";
@@ -408,58 +409,58 @@
 			name = CoreDataModel;
 			sourceTree = "<group>";
 		};
-		9FB40BC01AE1997D0007A2B2 /* Country */ = {
+		9FB40BC01AE1997D0007A2B2 /* CountryEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BB91AE199620007A2B2 /* DRVCountry.h */,
-				9FB40BBA1AE199620007A2B2 /* DRVCountry.m */,
+				9FB40BB91AE199620007A2B2 /* DRVCountryEntity.h */,
+				9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */,
 			);
-			name = Country;
+			name = CountryEntity;
 			sourceTree = "<group>";
 		};
-		9FB40BC11AE199890007A2B2 /* PlatesInfo */ = {
+		9FB40BC11AE199890007A2B2 /* PlatesInfoEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BBC1AE199620007A2B2 /* DRVPlatesInfo.h */,
-				9FB40BBD1AE199620007A2B2 /* DRVPlatesInfo.m */,
+				9FB40BBC1AE199620007A2B2 /* DRVPlatesInfoEntity.h */,
+				9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */,
 			);
-			name = PlatesInfo;
+			name = PlatesInfoEntity;
 			sourceTree = "<group>";
 		};
-		9FB40BC21AE1998F0007A2B2 /* InfoCategory */ = {
+		9FB40BC21AE1998F0007A2B2 /* InfoCategoryEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BB61AE199620007A2B2 /* DRVInfoCategory.h */,
-				9FB40BB71AE199620007A2B2 /* DRVInfoCategory.m */,
+				9FB40BB61AE199620007A2B2 /* DRVInfoCategoryEntity.h */,
+				9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */,
 			);
-			name = InfoCategory;
+			name = InfoCategoryEntity;
 			sourceTree = "<group>";
 		};
-		9FB40BC31AE199960007A2B2 /* PoliceInfo */ = {
+		9FB40BC31AE199960007A2B2 /* PoliceInfoEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BB31AE199620007A2B2 /* DRVPoliceInfo.h */,
-				9FB40BB41AE199620007A2B2 /* DRVPoliceInfo.m */,
+				9FB40BB31AE199620007A2B2 /* DRVPoliceInfoEntity.h */,
+				9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */,
 			);
-			name = PoliceInfo;
+			name = PoliceInfoEntity;
 			sourceTree = "<group>";
 		};
-		9FB40BC41AE1999C0007A2B2 /* RoadSign */ = {
+		9FB40BC41AE1999C0007A2B2 /* RoadSignEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BB01AE199610007A2B2 /* DRVRoadSign.h */,
-				9FB40BB11AE199610007A2B2 /* DRVRoadSign.m */,
+				9FB40BB01AE199610007A2B2 /* DRVRoadSignEntity.h */,
+				9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */,
 			);
-			name = RoadSign;
+			name = RoadSignEntity;
 			sourceTree = "<group>";
 		};
-		9FB40BC51AE199A10007A2B2 /* Penalty */ = {
+		9FB40BC51AE199A10007A2B2 /* PenaltyEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9FB40BAD1AE199600007A2B2 /* DRVPenalty.h */,
-				9FB40BAE1AE199600007A2B2 /* DRVPenalty.m */,
+				9FB40BAD1AE199600007A2B2 /* DRVPenaltyEntity.h */,
+				9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */,
 			);
-			name = Penalty;
+			name = PenaltyEntity;
 			sourceTree = "<group>";
 		};
 		9FB40BC71AE1A3910007A2B2 /* CountryService */ = {
@@ -676,21 +677,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FB40BAF1AE199600007A2B2 /* DRVPenalty.m in Sources */,
+				9FB40BAF1AE199600007A2B2 /* DRVPenaltyEntity.m in Sources */,
 				9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */,
 				9F6D61381ADA9427000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
-				9FB40BBE1AE199620007A2B2 /* DRVPlatesInfo.m in Sources */,
+				9FB40BBE1AE199620007A2B2 /* DRVPlatesInfoEntity.m in Sources */,
 				9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */,
 				9FB40BCB1AE1AE820007A2B2 /* DRVCountryServiceBase.m in Sources */,
-				9FB40BB21AE199610007A2B2 /* DRVRoadSign.m in Sources */,
+				9FB40BB21AE199610007A2B2 /* DRVRoadSignEntity.m in Sources */,
 				9F1C56001AD30CBF0028B654 /* DRVAppDelegate.m in Sources */,
-				9FB40BBB1AE199620007A2B2 /* DRVCountry.m in Sources */,
+				9FB40BBB1AE199620007A2B2 /* DRVCountryEntity.m in Sources */,
 				9FB40BD31AE3DEFE0007A2B2 /* DRVCountryModel.m in Sources */,
 				9F1C56271AD310370028B654 /* DRVCountryPickerViewController.m in Sources */,
 				9F1C55FD1AD30CBF0028B654 /* main.m in Sources */,
-				9FB40BB81AE199620007A2B2 /* DRVInfoCategory.m in Sources */,
+				9FB40BB81AE199620007A2B2 /* DRVInfoCategoryEntity.m in Sources */,
 				9F2BA3241ADAA31000F56F9D /* DRVGeoJsonConstants.m in Sources */,
-				9FB40BB51AE199620007A2B2 /* DRVPoliceInfo.m in Sources */,
+				9FB40BB51AE199620007A2B2 /* DRVPoliceInfoEntity.m in Sources */,
 				9FB40BAC1AE190F80007A2B2 /* Countries.xcdatamodeld in Sources */,
 				9FB40B9E1AE02AE00007A2B2 /* DRVModuleAssembly.m in Sources */,
 				9F6D613F1ADA94FE000EBC44 /* DRVCountryGeoData.m in Sources */,
@@ -701,6 +702,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB40BD71AE3E3AF0007A2B2 /* DRVCountryModel.m in Sources */,
 				9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
 				9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */,
 				9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */,

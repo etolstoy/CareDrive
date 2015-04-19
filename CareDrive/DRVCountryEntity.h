@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class DRVInfoCategory, DRVPenalty, DRVPoliceInfo, DRVRoadSign, DRVPlatesInfo;
+@class DRVInfoCategoryEntity, DRVPenaltyEntity, DRVPoliceInfoEntity, DRVRoadSignEntity, DRVPlatesInfoEntity;
 
-@interface DRVCountry : NSManagedObject
+@interface DRVCountryEntity : NSManagedObject
 
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSString * isoCode;
@@ -20,24 +20,24 @@
 @property (nonatomic, retain) NSSet *infoCategories;
 @property (nonatomic, retain) NSSet *roadSigns;
 @property (nonatomic, retain) NSSet *penalties;
-@property (nonatomic, retain) DRVPoliceInfo *policeInfo;
-@property (nonatomic, retain) DRVPlatesInfo *platesInfo;
+@property (nonatomic, retain) DRVPoliceInfoEntity *policeInfo;
+@property (nonatomic, retain) DRVPlatesInfoEntity *platesInfo;
 @end
 
-@interface DRVCountry (CoreDataGeneratedAccessors)
+@interface DRVCountryEntity (CoreDataGeneratedAccessors)
 
-- (void)addInfoCategoriesObject:(DRVInfoCategory *)value;
-- (void)removeInfoCategoriesObject:(DRVInfoCategory *)value;
+- (void)addInfoCategoriesObject:(DRVInfoCategoryEntity *)value;
+- (void)removeInfoCategoriesObject:(DRVInfoCategoryEntity *)value;
 - (void)addInfoCategories:(NSSet *)values;
 - (void)removeInfoCategories:(NSSet *)values;
 
-- (void)addRoadSignsObject:(DRVRoadSign *)value;
-- (void)removeRoadSignsObject:(DRVRoadSign *)value;
+- (void)addRoadSignsObject:(DRVRoadSignEntity *)value;
+- (void)removeRoadSignsObject:(DRVRoadSignEntity *)value;
 - (void)addRoadSigns:(NSSet *)values;
 - (void)removeRoadSigns:(NSSet *)values;
 
-- (void)addPenaltiesObject:(DRVPenalty *)value;
-- (void)removePenaltiesObject:(DRVPenalty *)value;
+- (void)addPenaltiesObject:(DRVPenaltyEntity *)value;
+- (void)removePenaltiesObject:(DRVPenaltyEntity *)value;
 - (void)addPenalties:(NSSet *)values;
 - (void)removePenalties:(NSSet *)values;
 

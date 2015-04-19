@@ -1,19 +1,18 @@
 //
-//  DRVPlatesInfo.m
+//  DRVPenalty.m
 //  CareDrive
 //
 //  Created by Egor Tolstoy on 17.04.15.
 //  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "DRVPlatesInfo.h"
-#import "DRVCountry.h"
+#import "DRVPenaltyEntity.h"
 
+@implementation DRVPenaltyEntity
 
-@implementation DRVPlatesInfo
-
+@dynamic name;
 @dynamic detailText;
-@dynamic photos;
+@dynamic price;
 @dynamic country;
 
 @end
