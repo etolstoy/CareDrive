@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DRVCountryPickerView.h"
+#import "DRVCountryPickerViewIO.h"
 
 @class DRVCountryPickerPresenter;
 
-@interface DRVCountryPickerViewController : UIViewController <DRVCountryPickerView>
+@interface DRVCountryPickerViewController : UIViewController <DRVCountryPickerViewInput>
 
-@property (strong, nonatomic) DRVCountryPickerPresenter *presenter;
+@property (strong, nonatomic) id <DRVCountryPickerViewOutput> presenter;
 
 @end

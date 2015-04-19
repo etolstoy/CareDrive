@@ -73,7 +73,7 @@
 		9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenter.m; sourceTree = "<group>"; };
 		9F1C56311ADA7D440028B654 /* DRVCountryPickerInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractor.h; sourceTree = "<group>"; };
 		9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractor.m; sourceTree = "<group>"; };
-		9F1C56351ADA7D920028B654 /* DRVCountryPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerView.h; sourceTree = "<group>"; };
+		9F1C56351ADA7D920028B654 /* DRVCountryPickerViewIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerViewIO.h; sourceTree = "<group>"; };
 		9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractorIO.h; sourceTree = "<group>"; };
 		9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenterTests.m; sourceTree = "<group>"; };
 		9F2BA3221ADAA31000F56F9D /* DRVGeoJsonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVGeoJsonConstants.h; sourceTree = "<group>"; };
@@ -239,7 +239,7 @@
 			children = (
 				9F1C56251AD310370028B654 /* DRVCountryPickerViewController.h */,
 				9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */,
-				9F1C56351ADA7D920028B654 /* DRVCountryPickerView.h */,
+				9F1C56351ADA7D920028B654 /* DRVCountryPickerViewIO.h */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";

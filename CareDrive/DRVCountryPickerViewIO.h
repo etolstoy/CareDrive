@@ -9,9 +9,19 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-@protocol DRVCountryPickerView <NSObject>
+@class RMMapView;
+
+@protocol DRVCountryPickerViewInput <NSObject>
 
 - (void)setMapTilesWithName:(NSString *)mapTilesName format:(NSString *)mapTilesFormat;
 - (void)setTableViewDataSource:(id <UITableViewDataSource>)dataSource;
+
+@end
+
+@protocol DRVCountryPickerViewOutput <NSObject>
+
+- (void)setupMapWithTiles;
+- (void)setupCountriesTableView;
+- (void)processTapOnMap:(RMMapView *)map at:(CGPoint)point;
 
 @end

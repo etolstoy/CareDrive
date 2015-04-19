@@ -7,22 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
 
 #import "DRVCountryPickerInteractorIO.h"
+#import "DRVCountryPickerViewIO.h"
 
-@protocol DRVCountryPickerView;
-@protocol DRVCountryPickerInteractorInput;
+@interface DRVCountryPickerPresenter : NSObject <DRVCountryPickerInteractorOutput, DRVCountryPickerViewOutput>
 
-@class RMMapView;
-
-@interface DRVCountryPickerPresenter : NSObject <DRVCountryPickerInteractorOutput>
-
-@property (nonatomic, strong) id <DRVCountryPickerView> view;
+@property (nonatomic, strong) id <DRVCountryPickerViewInput> view;
 @property (nonatomic, strong) id <DRVCountryPickerInteractorInput> interactor;
-
-- (void)setupMapWithTiles;
-- (void)setupCountriesTableView;
-- (void)processTapOnMap:(RMMapView *)map at:(CGPoint)point;
 
 @end

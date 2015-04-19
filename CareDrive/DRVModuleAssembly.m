@@ -7,6 +7,9 @@
 //
 
 #import "DRVModuleAssembly.h"
+
+#import "DRVCountryPickerViewIO.h"
+#import "DRVCountryPickerInteractorIO.h"
 #import "DRVCountryPickerViewController.h"
 #import "DRVCountryPickerPresenter.h"
 #import "DRVCountryPickerInteractor.h"
@@ -15,21 +18,19 @@
 
 @implementation DRVModuleAssembly
 
-- (UIViewController *)countryPickerViewController {
+- (id <DRVCountryPickerViewInput>)countryPickerViewController {
     return [TyphoonDefinition withClass:[DRVCountryPickerViewController class] configuration:^(TyphoonDefinition *definition) {
-        
         [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
     }];
 }
 
-- (DRVCountryPickerPresenter *)countryPickerPresenter {
+- (id <DRVCountryPickerInteractorOutput, DRVCountryPickerViewOutput>)countryPickerPresenter {
     return [TyphoonDefinition withClass:[DRVCountryPickerPresenter class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(interactor) with:[self countryPickerInteractor]];
         [definition injectProperty:@selector(view) with:[self countryPickerViewController]];
     }];
 }
-
-- (DRVCountryPickerInteractor *)countryPickerInteractor {
+- (id <DRVCountryPickerInteractorInput>)countryPickerInteractor {
     return [TyphoonDefinition withClass:[DRVCountryPickerInteractor class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(countryGeoService) with:[self countryGeoServiceBase]];
         [definition injectProperty:@selector(countryService) with:[self countryServiceBase]];

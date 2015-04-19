@@ -11,7 +11,7 @@
 #import <OCMock/OCMock.h>
 
 #import "DRVCountryPickerPresenter.h"
-#import "DRVCountryPickerView.h"
+#import "DRVCountryPickerViewIO.h"
 #import "DRVCountryPickerInteractorIO.h"
 
 @protocol RMMapViewDelegate;
@@ -30,7 +30,7 @@
     [super setUp];
 
     self.presenter = [[DRVCountryPickerPresenter alloc] init];
-    self.mockView = OCMProtocolMock(@protocol(DRVCountryPickerView));
+    self.mockView = OCMProtocolMock(@protocol(DRVCountryPickerViewInput));
     self.mockInteractor = OCMProtocolMock(@protocol(DRVCountryPickerInteractorInput));
     
     self.presenter.view = self.mockView;
