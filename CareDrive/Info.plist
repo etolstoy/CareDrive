@@ -25,10 +25,14 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>CountryPickerUserStory</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+	</array>
+	<key>TyphoonInitialAssemblies</key>
+	<array>
+		<string>DRVModuleAssembly</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

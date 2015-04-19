@@ -1,0 +1,62 @@
+PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - FMDB (2.3):
+    - FMDB/standard (= 2.3)
+  - FMDB/common (2.3)
+  - FMDB/standard (2.3):
+    - FMDB/common
+  - GRMustache (7.3.0):
+    - JRSwizzle (~> 1.0)
+  - JRSwizzle (1.0)
+  - MagicalRecord (2.2):
+    - MagicalRecord/Core (= 2.2)
+  - MagicalRecord/Core (2.2)
+  - Mapbox-iOS-SDK (1.6.0):
+    - FMDB (= 2.3)
+    - GRMustache (= 7.3.0)
+    - SMCalloutView (= 2.0)
+  - OCMock (3.1.2)
+  - PureLayout (2.0.5)
+  - SMCalloutView (2.0)
+  - Typhoon (3.0.2):
+    - Typhoon/no-arc (= 3.0.2)
+  - Typhoon/no-arc (3.0.2)
+  - UIViewController+Routing (0.1.0)
+
+DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
+  - MagicalRecord (~> 2.2)
+  - Mapbox-iOS-SDK (~> 1.6.0)
+  - OCMock (~> 3.1)
+  - PureLayout (~> 2.0.5)
+  - Typhoon (~> 3.0.2)
+  - UIViewController+Routing (~> 0.1.0)
+
+SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  FMDB: 773d79bb74226959b7e2286b1d6e0bd857c88915
+  GRMustache: 6baee020c5644416c034f5afb1607f6219e7f753
+  JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
+  MagicalRecord: f8a56bb87ab6552f20c4bb8681a1958a197ea3cd
+  Mapbox-iOS-SDK: ee136ca5b7f853456b50dfd7a7f0e243288cf86f
+  OCMock: a10ea9f0a6e921651f96f78b6faee95ebc813b92
+  PureLayout: a0fe75f1cf485801e7e00b723b8a3c32dca558e2
+  SMCalloutView: f758edd824b18bf4f42de00df1e299861a2d1950
+  Typhoon: 41c79941e0235c0177457a8f272953d922f47d74
+  UIViewController+Routing: 3973d7b155c8dc1715721d55638c9c8b1485c6cc
+
+COCOAPODS: 0.36.3

@@ -11,8 +11,48 @@
 		9F1C56001AD30CBF0028B654 /* DRVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C55FF1AD30CBF0028B654 /* DRVAppDelegate.m */; };
 		9F1C56081AD30CBF0028B654 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56071AD30CBF0028B654 /* Images.xcassets */; };
 		9F1C560B1AD30CBF0028B654 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56091AD30CBF0028B654 /* LaunchScreen.xib */; };
-		9F1C56171AD30CBF0028B654 /* CareDriveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56161AD30CBF0028B654 /* CareDriveTests.m */; };
 		9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */; };
+		9F1C56271AD310370028B654 /* DRVCountryPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */; };
+		9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */; };
+		9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */; };
+		9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
+		9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */; };
+		9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */; };
+		9F2BA3241ADAA31000F56F9D /* DRVGeoJsonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */; };
+		9F48361D1ADA8D7A001E5564 /* world-110m.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9F48361C1ADA8D7A001E5564 /* world-110m.geojson */; };
+		9F6D61381ADA9427000EBC44 /* DRVCountryGeoServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D61371ADA9427000EBC44 /* DRVCountryGeoServiceBase.m */; };
+		9F6D613F1ADA94FE000EBC44 /* DRVCountryGeoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D613E1ADA94FE000EBC44 /* DRVCountryGeoData.m */; };
+		9F6D61431ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D61421ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m */; };
+		9F6D61461ADA971C000EBC44 /* DRVCountryGeoData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D613E1ADA94FE000EBC44 /* DRVCountryGeoData.m */; };
+		9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F6D61371ADA9427000EBC44 /* DRVCountryGeoServiceBase.m */; };
+		9F7D71DD1AE3E9D700890024 /* DRVCountryServiceBaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D71DC1AE3E9D700890024 /* DRVCountryServiceBaseTests.m */; };
+		9F7D71DE1AE3EC2100890024 /* DRVCountryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */; };
+		9F7D71DF1AE3EC2800890024 /* DRVPlatesInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */; };
+		9F7D71E01AE3EC2C00890024 /* DRVInfoCategoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */; };
+		9F7D71E11AE3EC3000890024 /* DRVPoliceInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */; };
+		9F7D71E21AE3EC3400890024 /* DRVRoadSignEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */; };
+		9F7D71E31AE3EC3600890024 /* DRVPenaltyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */; };
+		9F7D71E41AE3EC3A00890024 /* DRVCountryServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */; };
+		9F7D71E51AE3ECC500890024 /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */; };
+		9F7D71E61AE3F5C600890024 /* world-110m.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9F48361C1ADA8D7A001E5564 /* world-110m.geojson */; };
+		9F7D71ED1AE3FC2F00890024 /* DRVCountryPickerRouterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D71EC1AE3FC2F00890024 /* DRVCountryPickerRouterBase.m */; };
+		9F7D71F21AE3FCB200890024 /* DRVRouterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F7D71F11AE3FCB200890024 /* DRVRouterBase.m */; };
+		9FB40B9E1AE02AE00007A2B2 /* DRVModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */; };
+		9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */; };
+		9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
+		9FB40BA81AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */; };
+		9FB40BAC1AE190F80007A2B2 /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */; };
+		9FB40BAF1AE199600007A2B2 /* DRVPenaltyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */; };
+		9FB40BB21AE199610007A2B2 /* DRVRoadSignEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */; };
+		9FB40BB51AE199620007A2B2 /* DRVPoliceInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */; };
+		9FB40BB81AE199620007A2B2 /* DRVInfoCategoryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */; };
+		9FB40BBB1AE199620007A2B2 /* DRVCountryEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */; };
+		9FB40BBE1AE199620007A2B2 /* DRVPlatesInfoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */; };
+		9FB40BCB1AE1AE820007A2B2 /* DRVCountryServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */; };
+		9FB40BD31AE3DEFE0007A2B2 /* DRVCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */; };
+		9FB40BD71AE3E3AF0007A2B2 /* DRVCountryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */; };
+		E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65754A06480B207EB6A12BEA /* libPods.a */; };
+		EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB66F014828E08D6517A8E0F /* libPods-test.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +66,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65754A06480B207EB6A12BEA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.release.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.release.xcconfig"; sourceTree = "<group>"; };
 		9F1C55F71AD30CBF0028B654 /* CareDrive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CareDrive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1C55FB1AD30CBF0028B654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F1C55FC1AD30CBF0028B654 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -35,8 +77,60 @@
 		9F1C560A1AD30CBF0028B654 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		9F1C56101AD30CBF0028B654 /* CareDriveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CareDriveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F1C56151AD30CBF0028B654 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F1C56161AD30CBF0028B654 /* CareDriveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CareDriveTests.m; sourceTree = "<group>"; };
 		9F1C56201AD30D210028B654 /* CountryPickerUserStory.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CountryPickerUserStory.storyboard; sourceTree = "<group>"; };
+		9F1C56251AD310370028B654 /* DRVCountryPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerViewController.h; sourceTree = "<group>"; };
+		9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerViewController.m; sourceTree = "<group>"; };
+		9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "caredrive-map.mbtiles"; sourceTree = "<group>"; };
+		9F1C562D1ADA7D290028B654 /* DRVCountryPickerPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerPresenter.h; sourceTree = "<group>"; };
+		9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenter.m; sourceTree = "<group>"; };
+		9F1C56311ADA7D440028B654 /* DRVCountryPickerInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractor.h; sourceTree = "<group>"; };
+		9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractor.m; sourceTree = "<group>"; };
+		9F1C56351ADA7D920028B654 /* DRVCountryPickerViewIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerViewIO.h; sourceTree = "<group>"; };
+		9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerInteractorIO.h; sourceTree = "<group>"; };
+		9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerPresenterTests.m; sourceTree = "<group>"; };
+		9F2BA3221ADAA31000F56F9D /* DRVGeoJsonConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVGeoJsonConstants.h; sourceTree = "<group>"; };
+		9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVGeoJsonConstants.m; sourceTree = "<group>"; };
+		9F48361C1ADA8D7A001E5564 /* world-110m.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "world-110m.geojson"; sourceTree = "<group>"; };
+		9F6D61361ADA9427000EBC44 /* DRVCountryGeoServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryGeoServiceBase.h; sourceTree = "<group>"; };
+		9F6D61371ADA9427000EBC44 /* DRVCountryGeoServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryGeoServiceBase.m; sourceTree = "<group>"; };
+		9F6D613C1ADA9461000EBC44 /* DRVCountryGeoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryGeoService.h; sourceTree = "<group>"; };
+		9F6D613D1ADA94FE000EBC44 /* DRVCountryGeoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryGeoData.h; sourceTree = "<group>"; };
+		9F6D613E1ADA94FE000EBC44 /* DRVCountryGeoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryGeoData.m; sourceTree = "<group>"; };
+		9F6D61421ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryGeoServiceBaseTests.m; sourceTree = "<group>"; };
+		9F7D71DC1AE3E9D700890024 /* DRVCountryServiceBaseTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryServiceBaseTests.m; sourceTree = "<group>"; };
+		9F7D71E91AE3FBEC00890024 /* DRVCountryPickerRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerRouter.h; sourceTree = "<group>"; };
+		9F7D71EB1AE3FC2F00890024 /* DRVCountryPickerRouterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerRouterBase.h; sourceTree = "<group>"; };
+		9F7D71EC1AE3FC2F00890024 /* DRVCountryPickerRouterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerRouterBase.m; sourceTree = "<group>"; };
+		9F7D71F01AE3FCB200890024 /* DRVRouterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRouterBase.h; sourceTree = "<group>"; };
+		9F7D71F11AE3FCB200890024 /* DRVRouterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVRouterBase.m; sourceTree = "<group>"; };
+		9F7D71F31AE3FE7200890024 /* DRVCountryPickerRouterOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerRouterOutput.h; sourceTree = "<group>"; };
+		9F7D71F41AE404AE00890024 /* DRVRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRouter.h; sourceTree = "<group>"; };
+		9FB40B9C1AE02AE00007A2B2 /* DRVModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVModuleAssembly.h; sourceTree = "<group>"; };
+		9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVModuleAssembly.m; sourceTree = "<group>"; };
+		9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractorTests.m; sourceTree = "<group>"; };
+		9FB40BAB1AE190F80007A2B2 /* Countries.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Countries.xcdatamodel; sourceTree = "<group>"; };
+		9FB40BAD1AE199600007A2B2 /* DRVPenaltyEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPenaltyEntity.h; sourceTree = "<group>"; };
+		9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPenaltyEntity.m; sourceTree = "<group>"; };
+		9FB40BB01AE199610007A2B2 /* DRVRoadSignEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRoadSignEntity.h; sourceTree = "<group>"; };
+		9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVRoadSignEntity.m; sourceTree = "<group>"; };
+		9FB40BB31AE199620007A2B2 /* DRVPoliceInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPoliceInfoEntity.h; sourceTree = "<group>"; };
+		9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPoliceInfoEntity.m; sourceTree = "<group>"; };
+		9FB40BB61AE199620007A2B2 /* DRVInfoCategoryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVInfoCategoryEntity.h; sourceTree = "<group>"; };
+		9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVInfoCategoryEntity.m; sourceTree = "<group>"; };
+		9FB40BB91AE199620007A2B2 /* DRVCountryEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryEntity.h; sourceTree = "<group>"; };
+		9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryEntity.m; sourceTree = "<group>"; };
+		9FB40BBC1AE199620007A2B2 /* DRVPlatesInfoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVPlatesInfoEntity.h; sourceTree = "<group>"; };
+		9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVPlatesInfoEntity.m; sourceTree = "<group>"; };
+		9FB40BC61AE1A38D0007A2B2 /* DRVCountryService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryService.h; sourceTree = "<group>"; };
+		9FB40BC91AE1AE820007A2B2 /* DRVCountryServiceBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryServiceBase.h; sourceTree = "<group>"; };
+		9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryServiceBase.m; sourceTree = "<group>"; };
+		9FB40BD11AE3DEFE0007A2B2 /* DRVCountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryModel.h; sourceTree = "<group>"; };
+		9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryModel.m; sourceTree = "<group>"; };
+		9FB40BD51AE3E25C0007A2B2 /* EXTScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
+		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
+		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB66F014828E08D6517A8E0F /* libPods-test.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-test.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +138,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1EEBA107A5A729B2EA09AA7 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,18 +146,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBFA1AB8DE2D1866BDC98862 /* libPods-test.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		190C0367687EB8C598CC4764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */,
+				DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */,
+				D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */,
+				65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9F1C55EE1AD30CBF0028B654 = {
 			isa = PBXGroup;
 			children = (
 				9F1C55F91AD30CBF0028B654 /* CareDrive */,
 				9F1C56131AD30CBF0028B654 /* CareDriveTests */,
 				9F1C55F81AD30CBF0028B654 /* Products */,
+				190C0367687EB8C598CC4764 /* Pods */,
+				EB04F4624F86DC6DBCBECCEA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,9 +187,13 @@
 		9F1C55F91AD30CBF0028B654 /* CareDrive */ = {
 			isa = PBXGroup;
 			children = (
-				9F1C55FE1AD30CBF0028B654 /* DRVAppDelegate.h */,
-				9F1C55FF1AD30CBF0028B654 /* DRVAppDelegate.m */,
-				9F1C56221AD30D260028B654 /* UserStories */,
+				9FB40BA01AE02BAE0007A2B2 /* AppDelegate */,
+				9FB40B9F1AE02BA80007A2B2 /* Assemblies */,
+				9F1C56221AD30D260028B654 /* Userstories */,
+				9F7D71E71AE3FAD000890024 /* Modules */,
+				9F6D61391ADA942A000EBC44 /* Logic */,
+				9FB40BD61AE3E2620007A2B2 /* Vendor */,
+				9F1C562B1AD311500028B654 /* Resources */,
 				9F1C56071AD30CBF0028B654 /* Images.xcassets */,
 				9F1C56091AD30CBF0028B654 /* LaunchScreen.xib */,
 				9F1C55FA1AD30CBF0028B654 /* Supporting Files */,
@@ -100,8 +213,9 @@
 		9F1C56131AD30CBF0028B654 /* CareDriveTests */ = {
 			isa = PBXGroup;
 			children = (
-				9F1C56161AD30CBF0028B654 /* CareDriveTests.m */,
 				9F1C56141AD30CBF0028B654 /* Supporting Files */,
+				9F1C56391ADA7FEC0028B654 /* Userstories */,
+				9F6D61441ADA9707000EBC44 /* Logic */,
 			);
 			path = CareDriveTests;
 			sourceTree = "<group>";
@@ -114,12 +228,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9F1C56221AD30D260028B654 /* UserStories */ = {
+		9F1C56221AD30D260028B654 /* Userstories */ = {
 			isa = PBXGroup;
 			children = (
 				9F1C56231AD30D300028B654 /* CountryPickerUserStory */,
 			);
-			name = UserStories;
+			name = Userstories;
 			sourceTree = "<group>";
 		};
 		9F1C56231AD30D300028B654 /* CountryPickerUserStory */ = {
@@ -138,6 +252,330 @@
 			name = Storyboard;
 			sourceTree = "<group>";
 		};
+		9F1C56281AD3103B0028B654 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56251AD310370028B654 /* DRVCountryPickerViewController.h */,
+				9F1C56261AD310370028B654 /* DRVCountryPickerViewController.m */,
+				9F1C56351ADA7D920028B654 /* DRVCountryPickerViewIO.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9F1C562B1AD311500028B654 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C562C1AD311590028B654 /* Map */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		9F1C562C1AD311590028B654 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9F48361C1ADA8D7A001E5564 /* world-110m.geojson */,
+				9F1C56291AD3114E0028B654 /* caredrive-map.mbtiles */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		9F1C56301ADA7D2B0028B654 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C562D1ADA7D290028B654 /* DRVCountryPickerPresenter.h */,
+				9F1C562E1ADA7D290028B654 /* DRVCountryPickerPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		9F1C56341ADA7D480028B654 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56311ADA7D440028B654 /* DRVCountryPickerInteractor.h */,
+				9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */,
+				9F1C56361ADA7DF30028B654 /* DRVCountryPickerInteractorIO.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		9F1C56391ADA7FEC0028B654 /* Userstories */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C563A1ADA7FF50028B654 /* CountryPickerUserStory */,
+			);
+			name = Userstories;
+			sourceTree = "<group>";
+		};
+		9F1C563A1ADA7FF50028B654 /* CountryPickerUserStory */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C563B1ADA80000028B654 /* Presenters */,
+				9FB40BA91AE03CD40007A2B2 /* Interactors */,
+			);
+			name = CountryPickerUserStory;
+			sourceTree = "<group>";
+		};
+		9F1C563B1ADA80000028B654 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56371ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m */,
+			);
+			name = Presenters;
+			sourceTree = "<group>";
+		};
+		9F6D61391ADA942A000EBC44 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D613A1ADA9431000EBC44 /* Services */,
+				9FB40BBF1AE1996B0007A2B2 /* CoreDataModel */,
+				9F6D61401ADA9502000EBC44 /* Entities */,
+				9FB40BD01AE3DEC20007A2B2 /* Models */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		9F6D613A1ADA9431000EBC44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D613B1ADA943E000EBC44 /* CountryGeoService */,
+				9FB40BC71AE1A3910007A2B2 /* CountryService */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9F6D613B1ADA943E000EBC44 /* CountryGeoService */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D613C1ADA9461000EBC44 /* DRVCountryGeoService.h */,
+				9F6D61361ADA9427000EBC44 /* DRVCountryGeoServiceBase.h */,
+				9F6D61371ADA9427000EBC44 /* DRVCountryGeoServiceBase.m */,
+				9F2BA3221ADAA31000F56F9D /* DRVGeoJsonConstants.h */,
+				9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */,
+			);
+			name = CountryGeoService;
+			sourceTree = "<group>";
+		};
+		9F6D61401ADA9502000EBC44 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BC01AE1997D0007A2B2 /* CountryEntity */,
+				9FB40BC11AE199890007A2B2 /* PlatesInfoEntity */,
+				9FB40BC21AE1998F0007A2B2 /* InfoCategoryEntity */,
+				9FB40BC31AE199960007A2B2 /* PoliceInfoEntity */,
+				9FB40BC41AE1999C0007A2B2 /* RoadSignEntity */,
+				9FB40BC51AE199A10007A2B2 /* PenaltyEntity */,
+			);
+			name = Entities;
+			sourceTree = "<group>";
+		};
+		9F6D61411ADA9508000EBC44 /* CountryGeoData */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D613D1ADA94FE000EBC44 /* DRVCountryGeoData.h */,
+				9F6D613E1ADA94FE000EBC44 /* DRVCountryGeoData.m */,
+			);
+			name = CountryGeoData;
+			sourceTree = "<group>";
+		};
+		9F6D61441ADA9707000EBC44 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D61451ADA970C000EBC44 /* Services */,
+			);
+			name = Logic;
+			sourceTree = "<group>";
+		};
+		9F6D61451ADA970C000EBC44 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D61421ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m */,
+				9F7D71DC1AE3E9D700890024 /* DRVCountryServiceBaseTests.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9F7D71E71AE3FAD000890024 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				9F7D71EE1AE3FC9100890024 /* Common */,
+				9F7D71E81AE3FAE400890024 /* CountryPickerModule */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		9F7D71E81AE3FAE400890024 /* CountryPickerModule */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C56281AD3103B0028B654 /* View */,
+				9F1C56301ADA7D2B0028B654 /* Presenter */,
+				9F1C56341ADA7D480028B654 /* Interactor */,
+				9F7D71EA1AE3FBEF00890024 /* Router */,
+			);
+			name = CountryPickerModule;
+			sourceTree = "<group>";
+		};
+		9F7D71EA1AE3FBEF00890024 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				9F7D71E91AE3FBEC00890024 /* DRVCountryPickerRouter.h */,
+				9F7D71F31AE3FE7200890024 /* DRVCountryPickerRouterOutput.h */,
+				9F7D71EB1AE3FC2F00890024 /* DRVCountryPickerRouterBase.h */,
+				9F7D71EC1AE3FC2F00890024 /* DRVCountryPickerRouterBase.m */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		9F7D71EE1AE3FC9100890024 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9F7D71EF1AE3FC9D00890024 /* RouterBase */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		9F7D71EF1AE3FC9D00890024 /* RouterBase */ = {
+			isa = PBXGroup;
+			children = (
+				9F7D71F01AE3FCB200890024 /* DRVRouterBase.h */,
+				9F7D71F11AE3FCB200890024 /* DRVRouterBase.m */,
+				9F7D71F41AE404AE00890024 /* DRVRouter.h */,
+			);
+			name = RouterBase;
+			sourceTree = "<group>";
+		};
+		9FB40B9F1AE02BA80007A2B2 /* Assemblies */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40B9C1AE02AE00007A2B2 /* DRVModuleAssembly.h */,
+				9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */,
+			);
+			name = Assemblies;
+			sourceTree = "<group>";
+		};
+		9FB40BA01AE02BAE0007A2B2 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				9F1C55FE1AD30CBF0028B654 /* DRVAppDelegate.h */,
+				9F1C55FF1AD30CBF0028B654 /* DRVAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		9FB40BA91AE03CD40007A2B2 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */,
+			);
+			name = Interactors;
+			sourceTree = "<group>";
+		};
+		9FB40BBF1AE1996B0007A2B2 /* CoreDataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */,
+			);
+			name = CoreDataModel;
+			sourceTree = "<group>";
+		};
+		9FB40BC01AE1997D0007A2B2 /* CountryEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BB91AE199620007A2B2 /* DRVCountryEntity.h */,
+				9FB40BBA1AE199620007A2B2 /* DRVCountryEntity.m */,
+			);
+			name = CountryEntity;
+			sourceTree = "<group>";
+		};
+		9FB40BC11AE199890007A2B2 /* PlatesInfoEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BBC1AE199620007A2B2 /* DRVPlatesInfoEntity.h */,
+				9FB40BBD1AE199620007A2B2 /* DRVPlatesInfoEntity.m */,
+			);
+			name = PlatesInfoEntity;
+			sourceTree = "<group>";
+		};
+		9FB40BC21AE1998F0007A2B2 /* InfoCategoryEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BB61AE199620007A2B2 /* DRVInfoCategoryEntity.h */,
+				9FB40BB71AE199620007A2B2 /* DRVInfoCategoryEntity.m */,
+			);
+			name = InfoCategoryEntity;
+			sourceTree = "<group>";
+		};
+		9FB40BC31AE199960007A2B2 /* PoliceInfoEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BB31AE199620007A2B2 /* DRVPoliceInfoEntity.h */,
+				9FB40BB41AE199620007A2B2 /* DRVPoliceInfoEntity.m */,
+			);
+			name = PoliceInfoEntity;
+			sourceTree = "<group>";
+		};
+		9FB40BC41AE1999C0007A2B2 /* RoadSignEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BB01AE199610007A2B2 /* DRVRoadSignEntity.h */,
+				9FB40BB11AE199610007A2B2 /* DRVRoadSignEntity.m */,
+			);
+			name = RoadSignEntity;
+			sourceTree = "<group>";
+		};
+		9FB40BC51AE199A10007A2B2 /* PenaltyEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BAD1AE199600007A2B2 /* DRVPenaltyEntity.h */,
+				9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */,
+			);
+			name = PenaltyEntity;
+			sourceTree = "<group>";
+		};
+		9FB40BC71AE1A3910007A2B2 /* CountryService */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BC61AE1A38D0007A2B2 /* DRVCountryService.h */,
+				9FB40BC91AE1AE820007A2B2 /* DRVCountryServiceBase.h */,
+				9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */,
+			);
+			name = CountryService;
+			sourceTree = "<group>";
+		};
+		9FB40BD01AE3DEC20007A2B2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9F6D61411ADA9508000EBC44 /* CountryGeoData */,
+				9FB40BD41AE3DF020007A2B2 /* CountryModel */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9FB40BD41AE3DF020007A2B2 /* CountryModel */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BD11AE3DEFE0007A2B2 /* DRVCountryModel.h */,
+				9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */,
+			);
+			name = CountryModel;
+			sourceTree = "<group>";
+		};
+		9FB40BD61AE3E2620007A2B2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BD51AE3E25C0007A2B2 /* EXTScope.h */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65754A06480B207EB6A12BEA /* libPods.a */,
+				FB66F014828E08D6517A8E0F /* libPods-test.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,9 +583,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F1C561A1AD30CBF0028B654 /* Build configuration list for PBXNativeTarget "CareDrive" */;
 			buildPhases = (
+				C27C314EFF5E945BFB0C2D98 /* Check Pods Manifest.lock */,
 				9F1C55F31AD30CBF0028B654 /* Sources */,
 				9F1C55F41AD30CBF0028B654 /* Frameworks */,
 				9F1C55F51AD30CBF0028B654 /* Resources */,
+				BC50B7D120F5FF0CF32836FF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -162,9 +602,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F1C561D1AD30CBF0028B654 /* Build configuration list for PBXNativeTarget "CareDriveTests" */;
 			buildPhases = (
+				795C6BF1E5FCFA7AD01CD3D8 /* Check Pods Manifest.lock */,
 				9F1C560C1AD30CBF0028B654 /* Sources */,
 				9F1C560D1AD30CBF0028B654 /* Frameworks */,
 				9F1C560E1AD30CBF0028B654 /* Resources */,
+				7AC98D36DC3D8F4EB282C87D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -191,7 +633,6 @@
 					};
 					9F1C560F1AD30CBF0028B654 = {
 						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 9F1C55F61AD30CBF0028B654;
 					};
 				};
 			};
@@ -222,6 +663,8 @@
 				9F1C560B1AD30CBF0028B654 /* LaunchScreen.xib in Resources */,
 				9F1C56081AD30CBF0028B654 /* Images.xcassets in Resources */,
 				9F1C56211AD30D210028B654 /* CountryPickerUserStory.storyboard in Resources */,
+				9F1C562A1AD3114E0028B654 /* caredrive-map.mbtiles in Resources */,
+				9F48361D1ADA8D7A001E5564 /* world-110m.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,18 +672,100 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7D71E61AE3F5C600890024 /* world-110m.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		795C6BF1E5FCFA7AD01CD3D8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7AC98D36DC3D8F4EB282C87D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-test/Pods-test-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC50B7D120F5FF0CF32836FF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C27C314EFF5E945BFB0C2D98 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F1C55F31AD30CBF0028B654 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FB40BAF1AE199600007A2B2 /* DRVPenaltyEntity.m in Sources */,
+				9F1C56331ADA7D440028B654 /* DRVCountryPickerInteractor.m in Sources */,
+				9F6D61381ADA9427000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
+				9FB40BBE1AE199620007A2B2 /* DRVPlatesInfoEntity.m in Sources */,
+				9F1C562F1ADA7D290028B654 /* DRVCountryPickerPresenter.m in Sources */,
+				9FB40BCB1AE1AE820007A2B2 /* DRVCountryServiceBase.m in Sources */,
+				9FB40BB21AE199610007A2B2 /* DRVRoadSignEntity.m in Sources */,
 				9F1C56001AD30CBF0028B654 /* DRVAppDelegate.m in Sources */,
+				9F7D71ED1AE3FC2F00890024 /* DRVCountryPickerRouterBase.m in Sources */,
+				9FB40BBB1AE199620007A2B2 /* DRVCountryEntity.m in Sources */,
+				9FB40BD31AE3DEFE0007A2B2 /* DRVCountryModel.m in Sources */,
+				9F1C56271AD310370028B654 /* DRVCountryPickerViewController.m in Sources */,
 				9F1C55FD1AD30CBF0028B654 /* main.m in Sources */,
+				9FB40BB81AE199620007A2B2 /* DRVInfoCategoryEntity.m in Sources */,
+				9F7D71F21AE3FCB200890024 /* DRVRouterBase.m in Sources */,
+				9F2BA3241ADAA31000F56F9D /* DRVGeoJsonConstants.m in Sources */,
+				9FB40BB51AE199620007A2B2 /* DRVPoliceInfoEntity.m in Sources */,
+				9FB40BAC1AE190F80007A2B2 /* Countries.xcdatamodeld in Sources */,
+				9FB40B9E1AE02AE00007A2B2 /* DRVModuleAssembly.m in Sources */,
+				9F6D613F1ADA94FE000EBC44 /* DRVCountryGeoData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,7 +773,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F1C56171AD30CBF0028B654 /* CareDriveTests.m in Sources */,
+				9FB40BD71AE3E3AF0007A2B2 /* DRVCountryModel.m in Sources */,
+				9F7D71E41AE3EC3A00890024 /* DRVCountryServiceBase.m in Sources */,
+				9F6D61471ADA971E000EBC44 /* DRVCountryGeoServiceBase.m in Sources */,
+				9F7D71E21AE3EC3400890024 /* DRVRoadSignEntity.m in Sources */,
+				9F7D71E31AE3EC3600890024 /* DRVPenaltyEntity.m in Sources */,
+				9F1C563C1ADA80070028B654 /* DRVCountryPickerPresenter.m in Sources */,
+				9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */,
+				9F7D71DE1AE3EC2100890024 /* DRVCountryEntity.m in Sources */,
+				9F1C56381ADA7FE90028B654 /* DRVCountryPickerPresenterTests.m in Sources */,
+				9F7D71DF1AE3EC2800890024 /* DRVPlatesInfoEntity.m in Sources */,
+				9F7D71E51AE3ECC500890024 /* Countries.xcdatamodeld in Sources */,
+				9F7D71E11AE3EC3000890024 /* DRVPoliceInfoEntity.m in Sources */,
+				9F6D61431ADA9704000EBC44 /* DRVCountryGeoServiceBaseTests.m in Sources */,
+				9F6D61461ADA971C000EBC44 /* DRVCountryGeoData.m in Sources */,
+				9FB40BA81AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m in Sources */,
+				9F7D71E01AE3EC2C00890024 /* DRVInfoCategoryEntity.m in Sources */,
+				9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */,
+				9F7D71DD1AE3E9D700890024 /* DRVCountryServiceBaseTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,6 +894,7 @@
 		};
 		9F1C561B1AD30CBF0028B654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CareDrive/Info.plist;
@@ -362,6 +905,7 @@
 		};
 		9F1C561C1AD30CBF0028B654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CareDrive/Info.plist;
@@ -372,8 +916,8 @@
 		};
 		9F1C561E1AD30CBF0028B654 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -385,14 +929,13 @@
 				INFOPLIST_FILE = CareDriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareDrive.app/CareDrive";
 			};
 			name = Debug;
 		};
 		9F1C561F1AD30CBF0028B654 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F67E4487ACB64CEEA9771F /* Pods-test.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -400,7 +943,6 @@
 				INFOPLIST_FILE = CareDriveTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CareDrive.app/CareDrive";
 			};
 			name = Release;
 		};
@@ -423,6 +965,7 @@
 				9F1C561C1AD30CBF0028B654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9F1C561D1AD30CBF0028B654 /* Build configuration list for PBXNativeTarget "CareDriveTests" */ = {
 			isa = XCConfigurationList;
@@ -431,8 +974,22 @@
 				9F1C561F1AD30CBF0028B654 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9FB40BAB1AE190F80007A2B2 /* Countries.xcdatamodel */,
+			);
+			currentVersion = 9FB40BAB1AE190F80007A2B2 /* Countries.xcdatamodel */;
+			path = Countries.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9F1C55EF1AD30CBF0028B654 /* Project object */;
 }
