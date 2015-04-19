@@ -17,10 +17,15 @@
 
 @implementation DRVAppDelegate
 
+- (instancetype)init {
+    if (self = [super init]) {
+        [[RMConfiguration sharedInstance] setAccessToken:@"pk.eyJ1IjoiZXRvbHN0b3kiLCJhIjoiRVZJTmpMbyJ9.y1mZsgE79C8CjVxlACj2UQ"];
+        [MagicalRecord setupAutoMigratingCoreDataStack];
+    }
+    return self;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [[RMConfiguration sharedInstance] setAccessToken:@"pk.eyJ1IjoiZXRvbHN0b3kiLCJhIjoiRVZJTmpMbyJ9.y1mZsgE79C8CjVxlACj2UQ"];
-    [MagicalRecord setupAutoMigratingCoreDataStack];
 
     return YES;
 }

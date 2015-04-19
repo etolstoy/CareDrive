@@ -20,6 +20,9 @@ static CGFloat DRVCountryTableHeaderViewHeight = 250.0f;
 @property (strong, nonatomic) RMMapView *countryMapView;
 @property (weak, nonatomic) IBOutlet UITableView *countryTableView;
 
+@property (strong, nonatomic) id <UITableViewDataSource> tableViewDataSource;
+@property (strong, nonatomic) RMMBTilesSource *tilesSource;
+
 @end
 
 @implementation DRVCountryPickerViewController
@@ -31,11 +34,12 @@ static CGFloat DRVCountryTableHeaderViewHeight = 250.0f;
     
     [self setupTableHeaderView];
     
-    [self.presenter setupMapWithTiles];
-    [self.presenter setupCountriesTableView];
-    
     self.countryMapView.delegate = self;
     self.countryTableView.delegate = self;
+    
+    [self.countryMapView setTileSource:self.tilesSource];
+    self.countryTableView.dataSource = self.tableViewDataSource;
+    [self.countryTableView reloadData];
 }
 
 #pragma mark - Установка внешнего вида экрана
@@ -74,11 +78,13 @@ static CGFloat DRVCountryTableHeaderViewHeight = 250.0f;
 
 - (void)setMapTilesWithName:(NSString *)mapTilesName format:(NSString *)mapTilesFormat {
     RMMBTilesSource *tilesSource = [[RMMBTilesSource alloc] initWithTileSetResource:mapTilesName ofType:mapTilesFormat];
-    [self.countryMapView setTileSource:tilesSource];
+    self.tilesSource = tilesSource;
+    [self.countryMapView setTileSource:self.tilesSource];
 }
 
-- (void)setTableViewDataSource:(id <UITableViewDataSource>)dataSource {
-    self.countryTableView.dataSource = dataSource;
+- (void)setCountryTableViewDataSource:(id <UITableViewDataSource>)dataSource {
+    self.tableViewDataSource = dataSource;
+    self.countryTableView.dataSource = self.tableViewDataSource;
     [self.countryTableView reloadData];
 }
 

@@ -14,7 +14,7 @@
 @protocol DRVCountryPickerViewInput <NSObject>
 
 - (void)setMapTilesWithName:(NSString *)mapTilesName format:(NSString *)mapTilesFormat;
-- (void)setTableViewDataSource:(id <UITableViewDataSource>)dataSource;
+- (void)setCountryTableViewDataSource:(id <UITableViewDataSource>)dataSource;
 
 @end
 

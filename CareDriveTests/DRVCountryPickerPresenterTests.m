@@ -84,7 +84,7 @@
 - (void)testThatPresenterUpdatesViewWithCountries {
     // given
     NSArray *const kCountriesArray = @[[DRVCountryModel objectWithName:@"Test Name" countryCode:@"TestCode" flagColors:@[]]];
-    OCMExpect([self.mockView setTableViewDataSource:[OCMArg checkWithBlock:^BOOL(id <UITableViewDataSource> obj) {
+    OCMExpect([self.mockView setCountryTableViewDataSource:[OCMArg checkWithBlock:^BOOL(id <UITableViewDataSource> obj) {
         NSUInteger numberOfItems = [obj tableView:nil numberOfRowsInSection:0];
         return (numberOfItems == 1);
     }]]);

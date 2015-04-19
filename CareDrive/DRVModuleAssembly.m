@@ -15,6 +15,7 @@
 #import "DRVCountryPickerInteractor.h"
 #import "DRVCountryGeoServiceBase.h"
 #import "DRVCountryServiceBase.h"
+#import "DRVCountryPickerRouterBase.h"
 
 @implementation DRVModuleAssembly
 
@@ -28,6 +29,7 @@
     return [TyphoonDefinition withClass:[DRVCountryPickerPresenter class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(interactor) with:[self countryPickerInteractor]];
         [definition injectProperty:@selector(view) with:[self countryPickerViewController]];
+        [definition injectProperty:@selector(router) with:[self countryPickerRouter]];
     }];
 }
 - (id <DRVCountryPickerInteractorInput>)countryPickerInteractor {
@@ -35,6 +37,14 @@
         [definition injectProperty:@selector(countryGeoService) with:[self countryGeoServiceBase]];
         [definition injectProperty:@selector(countryService) with:[self countryServiceBase]];
         [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
+    }];
+}
+
+- (id <DRVCountryPickerRouter>)countryPickerRouter {
+    return [TyphoonDefinition withClass:[DRVCountryPickerRouterBase class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
+        
+        [definition performAfterInjections:@selector(setupCountryPickerModule)];
     }];
 }
 

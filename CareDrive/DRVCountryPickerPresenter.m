@@ -23,6 +23,11 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 
 @implementation DRVCountryPickerPresenter
 
+- (void)setupCountryPickerView {
+    [self setupMapWithTiles];
+    [self setupCountriesTableView];
+}
+
 - (void)setupMapWithTiles {
     [self.view setMapTilesWithName:DRVTilesFileName format:DRVTilesFileType];
 }
@@ -48,7 +53,7 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 
 - (void)didObtainCountriesArray:(NSArray *)array {
     self.countriesArray = array;
-    [self.view setTableViewDataSource:self];
+    [self.view setCountryTableViewDataSource:self];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
