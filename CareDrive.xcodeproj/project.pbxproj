@@ -105,6 +105,7 @@
 		9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryServiceBase.m; sourceTree = "<group>"; };
 		9FB40BD11AE3DEFE0007A2B2 /* DRVCountryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryModel.h; sourceTree = "<group>"; };
 		9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryModel.m; sourceTree = "<group>"; };
+		9FB40BD51AE3E25C0007A2B2 /* EXTScope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EXTScope.h; sourceTree = "<group>"; };
 		D05404672C0C5B5C80150DE9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D4854978D81DEA5768835AD2 /* Pods-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-test/Pods-test.debug.xcconfig"; sourceTree = "<group>"; };
 		DBDAE3162BABAB75865621D5 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +170,7 @@
 				9FB40B9F1AE02BA80007A2B2 /* Assemblies */,
 				9F1C56221AD30D260028B654 /* Userstories */,
 				9F6D61391ADA942A000EBC44 /* Logic */,
+				9FB40BD61AE3E2620007A2B2 /* Vendor */,
 				9F1C562B1AD311500028B654 /* Resources */,
 				9F1C56071AD30CBF0028B654 /* Images.xcassets */,
 				9F1C56091AD30CBF0028B654 /* LaunchScreen.xib */,
@@ -486,6 +488,14 @@
 				9FB40BD21AE3DEFE0007A2B2 /* DRVCountryModel.m */,
 			);
 			name = CountryModel;
+			sourceTree = "<group>";
+		};
+		9FB40BD61AE3E2620007A2B2 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				9FB40BD51AE3E25C0007A2B2 /* EXTScope.h */,
+			);
+			name = Vendor;
 			sourceTree = "<group>";
 		};
 		EB04F4624F86DC6DBCBECCEA /* Frameworks */ = {
