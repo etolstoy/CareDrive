@@ -1,5 +1,5 @@
 //
-//  DRVCountryPickerRouter.h
+//  DRVRouter.h
 //  CareDrive
 //
 //  Created by Egor Tolstoy on 19.04.15.
@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "DRVRouter.h"
+#import <UIViewController+Routing/UIViewController+Routing.h>
 
-@protocol DRVCountryPickerRouter <DRVRouter>
+@protocol DRVRouter <YDRouter>
 
-- (void)showCountryInfoView;
+- (void)setupCurrentModule;
 
 @end

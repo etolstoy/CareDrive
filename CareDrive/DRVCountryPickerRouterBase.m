@@ -11,7 +11,7 @@
 
 @implementation DRVCountryPickerRouterBase
 
-- (void)setupCountryPickerModule {
+- (void)setupCurrentModule {
     [self.presenter setupCountryPickerView];
 }
 

@@ -104,6 +104,7 @@
 		9F7D71F01AE3FCB200890024 /* DRVRouterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRouterBase.h; sourceTree = "<group>"; };
 		9F7D71F11AE3FCB200890024 /* DRVRouterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVRouterBase.m; sourceTree = "<group>"; };
 		9F7D71F31AE3FE7200890024 /* DRVCountryPickerRouterOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVCountryPickerRouterOutput.h; sourceTree = "<group>"; };
+		9F7D71F41AE404AE00890024 /* DRVRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVRouter.h; sourceTree = "<group>"; };
 		9FB40B9C1AE02AE00007A2B2 /* DRVModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRVModuleAssembly.h; sourceTree = "<group>"; };
 		9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVModuleAssembly.m; sourceTree = "<group>"; };
 		9FB40BA71AE03CD10007A2B2 /* DRVCountryPickerInteractorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRVCountryPickerInteractorTests.m; sourceTree = "<group>"; };
@@ -396,7 +397,7 @@
 		9F7D71E71AE3FAD000890024 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				9F7D71EF1AE3FC9D00890024 /* RouterBase */,
+				9F7D71EE1AE3FC9100890024 /* Common */,
 				9F7D71E81AE3FAE400890024 /* CountryPickerModule */,
 			);
 			name = Modules;
@@ -427,6 +428,7 @@
 		9F7D71EE1AE3FC9100890024 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9F7D71EF1AE3FC9D00890024 /* RouterBase */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -434,9 +436,9 @@
 		9F7D71EF1AE3FC9D00890024 /* RouterBase */ = {
 			isa = PBXGroup;
 			children = (
-				9F7D71EE1AE3FC9100890024 /* Common */,
 				9F7D71F01AE3FCB200890024 /* DRVRouterBase.h */,
 				9F7D71F11AE3FCB200890024 /* DRVRouterBase.m */,
+				9F7D71F41AE404AE00890024 /* DRVRouter.h */,
 			);
 			name = RouterBase;
 			sourceTree = "<group>";

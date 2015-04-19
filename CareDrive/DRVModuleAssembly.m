@@ -44,7 +44,7 @@
     return [TyphoonDefinition withClass:[DRVCountryPickerRouterBase class] configuration:^(TyphoonDefinition *definition) {
         [definition injectProperty:@selector(presenter) with:[self countryPickerPresenter]];
         
-        [definition performAfterInjections:@selector(setupCountryPickerModule)];
+        [definition performAfterInjections:@selector(setupCurrentModule)];
     }];
 }
 
