@@ -4,6 +4,7 @@ pod 'Mapbox-iOS-SDK', '~> 1.6.0'
 pod 'MagicalRecord', '~> 2.2'
 pod 'Typhoon', '~> 3.0.2'
 pod 'PureLayout', '~> 2.0.5'
+pod 'BlocksKit', '~> 2.2.5'
 
 target :app do
     link_with :CareDrive

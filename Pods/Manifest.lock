@@ -1,4 +1,19 @@
 PODS:
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - FMDB (2.3):
     - FMDB/standard (= 2.3)
   - FMDB/common (2.3)
@@ -22,6 +37,7 @@ PODS:
   - Typhoon/no-arc (3.0.2)
 
 DEPENDENCIES:
+  - BlocksKit (~> 2.2.5)
   - MagicalRecord (~> 2.2)
   - Mapbox-iOS-SDK (~> 1.6.0)
   - OCMock (~> 3.1)
@@ -29,6 +45,7 @@ DEPENDENCIES:
   - Typhoon (~> 3.0.2)
 
 SPEC CHECKSUMS:
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   FMDB: 773d79bb74226959b7e2286b1d6e0bd857c88915
   GRMustache: 6baee020c5644416c034f5afb1607f6219e7f753
   JRSwizzle: dd5ead5d913a0f29e7f558200165849f006bb1e3
