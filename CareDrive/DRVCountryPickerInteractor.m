@@ -10,6 +10,8 @@
 #import "DRVCountryGeoService.h"
 #import "DRVCountryService.h"
 #import "DRVCountryGeoData.h"
+#import "DRVCountry.h"
+#import "DRVCountryModel.h"
 
 @implementation DRVCountryPickerInteractor
 
@@ -24,8 +26,18 @@
 
 - (void)fetchCountriesArray {
     [self.countryService obtainCountriesListWithCompletionBlock:^(NSArray *countries, NSError *error) {
-        [self.presenter didFetchCountriesArray:countries];
+        NSArray *countryModels = [self mapToModelsCountriesEntities:countries];
+        [self.presenter didFetchCountriesArray:countryModels];
     }];
+}
+
+- (NSArray *)mapToModelsCountriesEntities:(NSArray *)countriesEntities {
+    NSMutableArray *results = [@[] mutableCopy];
+    for (DRVCountry *country in countriesEntities) {
+        DRVCountryModel *model = [DRVCountryModel objectWithName:country.name countryCode:country.isoCode flagColors:country.flagColors];
+        [results addObject:model];
+    }
+    return [results copy];
 }
 
 @end
