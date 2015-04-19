@@ -120,3 +120,9 @@
 #define COCOAPODS_VERSION_MINOR_Typhoon_no_arc 0
 #define COCOAPODS_VERSION_PATCH_Typhoon_no_arc 2
 
+// UIViewController+Routing
+#define COCOAPODS_POD_AVAILABLE_UIViewController_Routing
+#define COCOAPODS_VERSION_MAJOR_UIViewController_Routing 0
+#define COCOAPODS_VERSION_MINOR_UIViewController_Routing 1
+#define COCOAPODS_VERSION_PATCH_UIViewController_Routing 0
+
