@@ -34,6 +34,7 @@
 		9F7D71E31AE3EC3600890024 /* DRVPenaltyEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAE1AE199600007A2B2 /* DRVPenaltyEntity.m */; };
 		9F7D71E41AE3EC3A00890024 /* DRVCountryServiceBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BCA1AE1AE820007A2B2 /* DRVCountryServiceBase.m */; };
 		9F7D71E51AE3ECC500890024 /* Countries.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40BAA1AE190F80007A2B2 /* Countries.xcdatamodeld */; };
+		9F7D71E61AE3F5C600890024 /* world-110m.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 9F48361C1ADA8D7A001E5564 /* world-110m.geojson */; };
 		9FB40B9E1AE02AE00007A2B2 /* DRVModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FB40B9D1AE02AE00007A2B2 /* DRVModuleAssembly.m */; };
 		9FB40BA11AE03B370007A2B2 /* DRVGeoJsonConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F2BA3231ADAA31000F56F9D /* DRVGeoJsonConstants.m */; };
 		9FB40BA61AE03BC00007A2B2 /* DRVCountryPickerInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F1C56321ADA7D440028B654 /* DRVCountryPickerInteractor.m */; };
@@ -615,6 +616,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7D71E61AE3F5C600890024 /* world-110m.geojson in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

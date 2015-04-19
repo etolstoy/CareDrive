@@ -95,7 +95,7 @@ static NSString *const geojsonType = @"geojson";
 }
 
 - (void)setupCountriesDictionary {
-    NSString *jsonPath = [[NSBundle mainBundle] pathForResource:geojsonName ofType:geojsonType];
+    NSString *jsonPath = [[NSBundle bundleForClass:[self class]] pathForResource:geojsonName ofType:geojsonType];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:[[NSData alloc] initWithContentsOfFile:jsonPath] options:0 error:nil];
     
     NSMutableDictionary *mutableCountryFeatures = [@{} mutableCopy];
