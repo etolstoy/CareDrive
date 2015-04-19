@@ -26,10 +26,10 @@
     return geoData.polygons;
 }
 
-- (void)fetchCountriesArray {
+- (void)obtainCountriesArray {
     [self.countryService obtainCountriesListWithCompletionBlock:^(NSArray *countries, NSError *error) {
         NSArray *countryModels = [self mapToModelsCountriesEntities:countries];
-        [self.presenter didFetchCountriesArray:countryModels];
+        [self.presenter didObtainCountriesArray:countryModels];
     }];
 }
 

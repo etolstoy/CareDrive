@@ -28,7 +28,7 @@ static NSString *const DRVTilesFileType = @"mbtiles";
 }
 
 - (void)setupCountriesTableView {
-    [self.interactor fetchCountriesArray];
+    [self.interactor obtainCountriesArray];
 }
 
 - (void)processTapOnMap:(RMMapView *)map at:(CGPoint)point {
@@ -46,7 +46,7 @@ static NSString *const DRVTilesFileType = @"mbtiles";
     }
 }
 
-- (void)didFetchCountriesArray:(NSArray *)array {
+- (void)didObtainCountriesArray:(NSArray *)array {
     self.countriesArray = array;
     [self.view setTableViewDataSource:self];
 }

@@ -13,6 +13,7 @@
 #import "DRVCountryPickerPresenter.h"
 #import "DRVCountryPickerViewIO.h"
 #import "DRVCountryPickerInteractorIO.h"
+#import "DRVCountryModel.h"
 
 @protocol RMMapViewDelegate;
 
@@ -56,6 +57,18 @@
     OCMVerifyAll(self.mockView);
 }
 
+- (void)testThatPresenterSetupsCountriesTableView {
+    // given
+    OCMExpect([self.mockInteractor obtainCountriesArray]);
+    
+    // when
+    [self.presenter setupCountriesTableView];
+    
+    // then
+    OCMVerifyAll(self.mockInteractor);
+}
+
+
 - (void)testThatPresenterProcessesTapOnMap {
     // given
     OCMExpect([self.mockInteractor countryCodeFromMapFormattedOutput:[OCMArg any]]);
@@ -63,6 +76,21 @@
     
     // when
     [self.presenter processTapOnMap:nil at:CGPointZero];
+    
+    // then
+    OCMVerifyAll(self.mockView);
+}
+
+- (void)testThatPresenterUpdatesViewWithCountries {
+    // given
+    NSArray *const kCountriesArray = @[[DRVCountryModel objectWithName:@"Test Name" countryCode:@"TestCode" flagColors:@[]]];
+    OCMExpect([self.mockView setTableViewDataSource:[OCMArg checkWithBlock:^BOOL(id <UITableViewDataSource> obj) {
+        NSUInteger numberOfItems = [obj tableView:nil numberOfRowsInSection:0];
+        return (numberOfItems == 1);
+    }]]);
+    
+    // when
+    [self.presenter didObtainCountriesArray:kCountriesArray];
     
     // then
     OCMVerifyAll(self.mockView);
